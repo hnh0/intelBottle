@@ -1,14 +1,51 @@
-.wrapper{
-	height: 100% !important;
-    height: 100%;
-    margin: 0 auto; 
-    overflow: hidden;
-}
-.main{
-	float: left;
-    width: 100%;
-    margin: 0 auto;
-}
-.page1{background: red;}
+/*.page1{background: red;}*/
 .page2{background: blue;}
 .page3{background: yellow;}
+.page1{
+	background: url(../img/index_bg.jpg) no-repeat center 0;
+	background-size: cover;
+}
+.index_title{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	text-align: center;;
+	font-size: 2.2rem;
+	color: #fff;
+}
+.index_title span{
+	position: absolute;
+	display: inline-block;
+	font-size: 1.4rem;
+	height: 12px;
+}
+.index_title1{
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fffefe;
+}
+.index_title2{
+	position: absolute;
+	bottom: 16%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #fffefe;
+	line-height: 16px;
+}
+.index_link{
+	position: absolute;
+	bottom: 12%;
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	color: #fffefe;
+	text-decoration: underline;
+}
+
+
+
+
