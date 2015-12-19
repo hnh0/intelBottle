@@ -103,3 +103,7 @@ video{
   width: 100%;
   display: block;
 }
+.bg_1{
+  background: url(../img/bg_1.jpg) no-repeat center 0;
+  background-size: 100% auto;
+}
