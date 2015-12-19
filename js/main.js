@@ -30,8 +30,8 @@
 
 	$(function(){
 		var video_0 = $('#test')
-		video_0.play(target)
-		video_0.end(target)
+		video.play(video_0)
+		video.end(video_0)
 	})
 })();
 
