@@ -1,5 +1,5 @@
 (function(){
-	var video = {
+	window.video = {
 		init: function(){
 
 		},
@@ -25,6 +25,10 @@
 
 				if(callback)callback()
 			},false)
+		},
+		play_end: function(obj){
+			this.play(obj)
+			this.end(obj)
 		}
 	} 
 
@@ -98,7 +102,16 @@ var swipe = {
 				self.scrollTarget ++
 
 				self.scrolling = !self.scrolling
+
+				self.callback(self.scrollCurrent)
 			});
+	},
+	callback: function(i){
+		console.log(i)
+		var self = this
+		if(i == 2){
+			video.play_end($(self.scrollWrap).find('.page'+(i+1)).find('video'))
+		}
 	}
 }
 
@@ -116,7 +129,7 @@ $(function() {
 	//     keyboard: true,
 	//     responsiveFallback: false 
 	// });
-	$(swipe.scrollWrap).swipeUp(function(){
+	$(swipe.scrollWrap).find('.swipe').swipeUp(function(){
 		if(swipe.scrolling){
 			return false;
 		}
