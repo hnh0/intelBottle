@@ -18,7 +18,8 @@
             <section class="page1">11111111</section>
             <section class="page2">22222222</section>
             <section class="page3 swipe bg_detail">
-                <video id="test" src="video/guige/guige2.mov"><img class="video_img" src="video/guige/guige2.jpg" alt=""></video>
+                <video id="guige2" src="video/guige/guige2.mov"><img class="video_img" src="video/guige/guige2.jpg" alt=""></video>
+                <video id="guige1" class="hidden" src="video/guige/guige1.mov"><img class="video_img" src="video/guige/guige1.jpg" alt=""></video>
 
                 <div class="slogan_wrap">
                     <img src="./img/turn.png" alt="" class="turn">
@@ -27,7 +28,20 @@
                 
                 <div class="down_tip"></div>
             </section>
-            <section class="page4">44444444</section>
+            <section class="page4 swipe bg_detail">
+                <div class="slogan_wrap slogan_top">
+                    <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                </div><!-- /.slogan_wrap -->
+
+                <img class="video_img" src="video/guige/guige2.jpg" alt="">
+
+                <div class="bottom_text">
+                    运用变型翻转技术<br />
+                    型格瓶将实现多面投影功能
+                </div><!-- /.bottom_text -->
+                
+                <div class="down_tip"></div>
+            </section>
             <section class="page5">55555555</section>
             <section class="page6">66666666</section>
             <section class="page7">77777777</section>
@@ -44,7 +58,8 @@
 <script type="application/javascript" src="./js/main.js"></script>
 
 <script type="text/javascript">
-    swipe.fSwipe(2)
+    swipe.scrollTarget = 2;
+    swipe.fSwipe(swipe.scrollTarget)
 </script>
 </body>
 </html>

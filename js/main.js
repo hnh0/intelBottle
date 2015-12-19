@@ -20,7 +20,7 @@
 					var img = target.find('img')
 					target
 						.after(img)
-						.remove()
+						.addClass('hidden')
 				}
 
 				if(callback)callback()
@@ -29,16 +29,27 @@
 		play_end: function(obj){
 			this.play(obj)
 			this.end(obj)
+		},
+		landscape: function (){
+			$('#guige2')
+				.addClass('hidden')
+			$('.video_img').eq(0).addClass('hidden')
+
+			$('#guige1').removeClass('hidden')
+			$('.video_img').eq(1).removeClass('hidden')
+			video.play_end($(swipe.scrollWrap).find('.page3').find('video').eq(1))
+		},
+		portrait: function (){
+			$('#guige1')
+				.addClass('hidden')
+			$('.video_img').eq(1).addClass('hidden')
+
+			$('#guige2').removeClass('hidden')
+			$('.video_img').eq(0).removeClass('hidden')
+			video.play_end($(swipe.scrollWrap).find('.page3').find('video').eq(0))
 		}
-	} 
-
-	$(function(){
-		// var video_0 = $('#test')
-		// video.play(video_0)
-		// video.end(video_0)
-	})
+	}
 })();
-
 
 //手机震动
 window.onload = function() {
@@ -67,10 +78,18 @@ window.addEventListener('orientationchange', function(event){
     if ( window.orientation == 180 || window.orientation==0 ) {
     	//竖屏
         console.log("竖屏");
+
+		if(swipe.scrollCurrent == 2){
+			video.portrait()
+		}
     }
     if( window.orientation == 90 || window.orientation == -90 ) {
     	//横屏
         console.log("横屏");
+
+		if(swipe.scrollCurrent == 2){
+			video.landscape()
+		}
     }
 });
 
@@ -107,15 +126,13 @@ var swipe = {
 			});
 	},
 	callback: function(i){
-		console.log(i)
+		// console.log(i)
 		var self = this
-		if(i == 2){
-			video.play_end($(self.scrollWrap).find('.page'+(i+1)).find('video'))
-		}
 	}
 }
 
 $(function() {
+
     FastClick.attach(document.body);
  //    $('.main').onePageScroll({
 	//     sectionContainer: "section",
