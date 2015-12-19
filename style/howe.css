@@ -1,3 +1,7 @@
+.index_page{
+	background: url(../img/index_bg.jpg) no-repeat center 0;
+	background-size: cover;
+}
 .index_title{
 	position: absolute;
 	top: 20%;
