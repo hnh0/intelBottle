@@ -40,8 +40,8 @@ $(function() {
     $('.main').onePageScroll({
 	    sectionContainer: "section",
 	    easing: "ease",
-	    animationTime: 1000,
-	    pagination: true,
+	    animationTime: 500,
+	    pagination: false,
 	    updateURL: false,
 	    beforeMove: function(index) {},
 	    afterMove: function(index) {},
