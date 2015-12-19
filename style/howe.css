@@ -1,0 +1,14 @@
+.wrapper{
+	height: 100% !important;
+    height: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+.main{
+	float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+.page1{background: red;}
+.page2{background: blue;}
+.page3{background: yellow;}
