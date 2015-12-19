@@ -167,6 +167,15 @@
 .list_bottle.xingge_bottle span{
 	bottom: -4%;
 }
+.bottle_entry{
+    height: 50%;
+}
+.bottle_entry .bottle_entry_img{
+	height: 100%;
+}
+
+
+
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
     	bottom:60%;
