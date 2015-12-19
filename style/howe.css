@@ -1,3 +1,7 @@
+.index_page{
+	background: url(../img/index_bg.jpg) no-repeat center 0;
+	background-size: cover;
+}
 .index_title{
 	position: absolute;
 	top: 20%;
@@ -90,6 +94,122 @@
 	color: #fff;
 	text-decoration: underline;
 }
+.bottle_list_page{
+	background: url(../img/list_bg.jpg) no-repeat center bottom;
+	background-size: 100% auto;
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: transform 0.6s ease 0s;
+}
+.list_circle{
+	position: absolute;
+	bottom:30%;
+	left: 50%;
+	width: 225px;
+	height: 225px;
+	margin-left: -112px;
+	background: url(../img/list_circle.png) no-repeat center center;
+	background-size: 225px 225px;
+}
+.list_bottle{
+	position: absolute;
+}
+.list_bottle span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	color: #fffefe;
+	bottom: -12%;
+}
+.list_bottle.huancai_bottle{
+	bottom:68%;
+	left: 17%;
+	width: 97px;
+	height: 94px;
+	background: url(../img/huancai.png) no-repeat center center;
+	background-size: 97px 94px;
+}
+.list_bottle.wujie_bottle{
+	bottom: 68%;
+	right: 20%;
+	width: 52px;
+	height: 94px;
+	background: url(../img/wujie.png) no-repeat center center;
+	background-size: 52px 94px;
+}
+.list_bottle.ganguan_bottle{
+	bottom: 40%;
+	left: 10%;
+	width: 40px;
+	height: 93px;
+	background: url(../img/ganguan.png) no-repeat center center;
+	background-size: 28px 93px;
+}
+.list_bottle.chaobo_bottle{
+	bottom: 40%;
+	right: 10%;
+	width: 40px;
+	height: 98px;
+	background: url(../img/chaobo.png) no-repeat center center;
+	background-size: 25px 98px;
+}
+.list_bottle.xingge_bottle{
+	bottom: 24%;
+	left: 45%;
+	width: 44px;
+	height: 98px;
+	background: url(../img/xingge.png) no-repeat center center;
+	background-size: 44px 98px;
+}
+.list_bottle.xingge_bottle span{
+	bottom: -4%;
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+    .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
+    	bottom:60%;
+    }
+    .ip5.list_bottle.ganguan_bottle{
+		bottom: 39%;
+    }
+    .ip5.list_bottle.chaobo_bottle{
+    	bottom:38%;
+    }
+}
 
-
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
+    .ip6.list_circle{
+    	width: 300px;
+		height: 300px;
+		margin-left: -150px;
+		background: url(../img/list_circle.png) no-repeat center center;
+		background-size: 300px 300px;
+    }
+    .ip6.list_bottle.huancai_bottle{
+    	bottom: 68%;
+    }
+    .ip5.list_bottle.ganguan_bottle,.ip5.list_bottle.chaobo_bottle{
+    	bottom: 43%;
+    }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
+    
+    .ip6.list_circle{
+    	width: 300px;
+		height: 300px;
+		margin-left: -150px;
+		background: url(../img/list_circle.png) no-repeat center center;
+		background-size: 300px 300px;
+    }
+    .ip6p.list_bottle.huancai_bottle{
+    	bottom: 62%;
+    	left: 16%;
+    }
+    .ip6p.list_bottle.wujie_bottle{
+		bottom: 62%;
+		right: 22%;
+    }
+}
 

@@ -209,7 +209,7 @@ video{
   height: 75px;
   position: absolute;
   text-align: center;
-  bottom: 5%;
+  bottom: 4%;
 }
 .turn{
   width: 25px;
@@ -217,7 +217,7 @@ video{
   margin: 0 auto -6px;
 }
 .slogan{
-  min-width: 162px;
+  min-width: 200px;
   height: 56px;
   display: inline-block;
   line-height: 56px;
@@ -228,6 +228,7 @@ video{
   font-size: 12px;
   margin: 0 14px;
   padding: 0 3px;
+  letter-spacing: 2px;
 }
 .slogan::before,
 .slogan::after{
