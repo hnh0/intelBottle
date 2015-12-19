@@ -95,3 +95,11 @@ a {
     -webkit-flex: 1;
     flex: 1;
 }
+
+video{
+  width: 100%;
+}
+.video_img{
+  width: 100%;
+  display: block;
+}
