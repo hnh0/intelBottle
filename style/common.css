@@ -132,12 +132,13 @@ video{
 .main > *{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .down_tip {
     position: absolute;
     background: url("../img/down.png") no-repeat;
     background-size: 14px 20px;
-    bottom: 3%;
+    bottom: 1%;
     height: 20px;
     width: 14px;
     left: 50%;
@@ -197,8 +198,50 @@ video{
   position: absolute;
   left: 5%;
   top: 4%;
+  z-index: 2;
   width: 38px;
   height: 24px;
   background: url("../img/logo.png") no-repeat;
   background-size: 38px 24px;
+}
+.slogan_wrap{
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+}
+.turn{
+  width: 25px;
+  display: block;
+  margin: 0 auto -6px;
+}
+.slogan{
+  min-width: 170px;
+  height: 56px;
+  display: inline-block;
+  line-height: 56px;
+  background: url(../img/slogan_bg.png) repeat-x 0 center;
+  background-size: 1px 56px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 14px;
+}
+.slogan::before,
+.slogan::after{
+  content: '';
+  width: 14px;
+  height: 56px;
+  background: url(../img/slogan_left.png) no-repeat 0 center;
+  background-size: 14px 56px;
+  display: block;
+  float: left;
+  margin-left: -14px;
+}
+.slogan::before{
+  background-image: url(../img/slogan_right.png);
+  display: block;
+  float: right;
+  margin-right: -14px;
 }
