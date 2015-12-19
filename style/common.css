@@ -9,9 +9,16 @@ h1, h2, h3, h4, h5, p, em, img, ol, ul, li {
 }
 html{font-size: 62.5%;}
 body {
-  font-family: Helvetica, 'STXihei', 'STHeiti Light', 'Microsoft yahei', sans-serif;
+  font-family: "intel-clear", "intel-clear-cyrillic", "SimHei","SimSun",Arial,sans-serif !important;
   line-height: 1;
   background-color: #fff;
+}
+body, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 input {
@@ -103,7 +110,95 @@ video{
   width: 100%;
   display: block;
 }
-.bg_1{
+/*.bg_1{
   background: url(../img/bg_1.jpg) no-repeat center 0;
   background-size: 100% auto;
+}*/
+.wrapper{
+  height: 100% !important;
+    height: 100%;
+    /*width: 100%;*/
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+}
+.main{
+  float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: transform 0.6s ease 0s;
+}
+.main > *{
+  width: 100%;
+  height: 100%;
+}
+.down_tip {
+    position: absolute;
+    background: url("../img/down.png") no-repeat;
+    background-size: 14px 20px;
+    bottom: 3%;
+    height: 20px;
+    width: 14px;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    margin-left: -7px;
+    -webkit-animation: ToptoA 1.6s ease-out infinite;
+    -moz-animation: ToptoA 1.6s ease-out infinite;
+    -o-animation: ToptoA 1.6s ease-out infinite;
+    z-index: 100;
+}
+@-webkit-keyframes ToptoA {
+    0% {
+        -webkit-transform: translate(0, -40px);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes ToptoA {
+    0% {
+        -moz-transform: translate(0, -40px);
+        opacity: 0
+    }
+    20% {
+        -moz-transform: translate(0, -20px);
+        opacity: 1
+    }
+    100% {
+        -moz-transform: translate(0, 0);
+        opacity: 0
+    }
+}
+
+@-o-keyframes ToptoA {
+    0% {
+        -o-transform: translate(0, -40px);
+        opacity: 0
+    }
+    20% {
+        -o-transform: translate(0, -20px);
+        opacity: 1
+    }
+    100% {
+        -o-transform: translate(0, 0);
+        opacity: 0
+    }
+}
+.logo{
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  width: 38px;
+  height: 24px;
+  background: url("../img/logo.png") no-repeat;
+  background-size: 38px 24px;
 }

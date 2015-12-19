@@ -29,9 +29,9 @@
 	} 
 
 	$(function(){
-		var video_0 = $('#test')
-		video.play(video_0)
-		video.end(video_0)
+		// var video_0 = $('#test')
+		// video.play(video_0)
+		// video.end(video_0)
 	})
 })();
 
@@ -104,7 +104,18 @@ var swipe = {
 
 $(function() {
     FastClick.attach(document.body);
-
+ //    $('.main').onePageScroll({
+	//     sectionContainer: "section",
+	//     easing: "ease",
+	//     animationTime: 500,
+	//     pagination: false,
+	//     updateURL: false,
+	//     beforeMove: function(index) {},
+	//     afterMove: function(index) {},
+	//     loop: false,
+	//     keyboard: true,
+	//     responsiveFallback: false 
+	// });
 	$(swipe.scrollWrap).swipeUp(function(){
 		if(swipe.scrolling){
 			return false;
@@ -112,5 +123,4 @@ $(function() {
 
 		swipe.fSwipe(swipe.scrollTarget)
 	})
-
 })
