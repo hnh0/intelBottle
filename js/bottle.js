@@ -2,7 +2,7 @@
 	var bottle = {
 		bottle_img: ['huancai', 'wujie', 'ganguan', 'chaobo', 'xingge'],
 		bottle_txt: ['幻彩瓶', '无界瓶', '感官瓶', '超薄瓶', '型格瓶'],
-		bottle_target: [];
+		bottle_target: [],
 		showBottle: function (id) {
 			var $img = $('.bottle_entry_img'),
 				$txt = $('.bottle_entry_text')
