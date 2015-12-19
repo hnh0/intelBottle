@@ -3,9 +3,8 @@
 		init: function(){
 
 		},
-		bind: function(target, img, callback){
-			this.play(target)
-			this.end(target, img, callback)
+		bind: function(){
+
 		},
 		play: function(target){
 			target[0].play()
@@ -31,7 +30,8 @@
 
 	$(function(){
 		var video_0 = $('#test')
-		video.bind(video_0)
+		video.play(target)
+		video.end(target)
 	})
 })();
 
