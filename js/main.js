@@ -51,6 +51,57 @@
 	}
 })();
 
+//向上滑动方法
+var swipe = {
+	able: true,
+	scrollWrap: '.main',
+	iHeight: $('body').height(),
+	scrolling: false,
+	scrollCurrent: 0,
+	scrollTarget: 1,
+	fSwipe: function(i){
+		if(!this.able){
+			return false
+		}
+
+		var self = this,
+			oThis = $(self.scrollWrap),
+			oSons = oThis.find('section')
+		self.scrollTarget = i
+
+		self.scrolling = !self.scrolling
+
+		oSons.eq(0).after(oThis.find('section.page'+(self.scrollTarget+1)));
+		oThis
+			.animate({
+				marginTop: -self.iHeight
+				}, 600, function() {
+				oSons.eq(0).appendTo(oThis)
+				oThis
+					.css({marginTop: 0})
+
+				self.scrollCurrent = self.scrollTarget
+				self.scrollTarget ++
+
+				self.scrolling = !self.scrolling
+
+				self.callback(self.scrollCurrent)
+			});
+	},
+	beAble: function(){
+		this.able = true
+		$('.down_tip.hidden').removeClass('hidden')
+	},
+	callback: function(i){
+		// console.log(i)
+		var self = this
+
+		if(i == 1){
+			self.able = false
+		}
+	}
+}
+
 //手机震动
 window.onload = function() {
 
@@ -93,59 +144,10 @@ window.addEventListener('orientationchange', function(event){
     }
 });
 
-//向上滑动方法
-var swipe = {
-	scrollWrap: '.main',
-	iHeight: $('body').height(),
-	scrolling: false,
-	scrollCurrent: 0,
-	scrollTarget: 1,
-	fSwipe: function(i){
-		var self = this,
-			oThis = $(self.scrollWrap),
-			oSons = oThis.find('section')
-		self.scrollTarget = i
-
-		self.scrolling = !self.scrolling
-
-		oSons.eq(0).after(oThis.find('section.page'+(self.scrollTarget+1)));
-		oThis
-			.animate({
-				marginTop: -self.iHeight
-				}, 600, function() {
-				oSons.eq(0).appendTo(oThis)
-				oThis
-					.css({marginTop: 0})
-
-				self.scrollCurrent = self.scrollTarget
-				self.scrollTarget ++
-
-				self.scrolling = !self.scrolling
-
-				self.callback(self.scrollCurrent)
-			});
-	},
-	callback: function(i){
-		// console.log(i)
-		var self = this
-	}
-}
-
 $(function() {
 
     FastClick.attach(document.body);
- //    $('.main').onePageScroll({
-	//     sectionContainer: "section",
-	//     easing: "ease",
-	//     animationTime: 500,
-	//     pagination: false,
-	//     updateURL: false,
-	//     beforeMove: function(index) {},
-	//     afterMove: function(index) {},
-	//     loop: false,
-	//     keyboard: true,
-	//     responsiveFallback: false 
-	// });
+
 	$(swipe.scrollWrap).find('.swipe').swipeUp(function(){
 		if(swipe.scrolling){
 			return false;
