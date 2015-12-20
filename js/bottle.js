@@ -24,5 +24,11 @@
 		bottle.showBottle(id);
 		// swipe.scrollTarget = bottle.bottle_target[id];
 		swipe.beAble();
+	});
+	$('.index_link').on('click', function () {
+		$('.main_statement').removeClass('hidden');
+	});
+	$('.main_statement').on('click', function () {
+		$('.main_statement').addClass('hidden');
 	})
 })();
