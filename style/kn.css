@@ -75,3 +75,10 @@ section.black{
   position: absolute;
   top: 0;
 }
+.default_img{
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}

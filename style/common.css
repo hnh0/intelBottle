@@ -271,7 +271,7 @@ video{
   position: absolute;
   text-align: center;
   bottom: 4%;
-  z-index: 2;
+  z-index: 4;
 }
 .turn{
   width: 25px;

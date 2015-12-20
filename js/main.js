@@ -35,7 +35,7 @@
 
 			$('#xingge1').removeClass('hidden')
 			$('.video_img').eq(1).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(1))
+			video.play($(swipe.scrollWrap).find('.page4').find('video').eq(1))
 		},
 		portrait: function (){
 			$('#xingge1')
@@ -44,7 +44,7 @@
 
 			$('#xingge2').removeClass('hidden')
 			$('.video_img').eq(0).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(0))
+			video.play($(swipe.scrollWrap).find('.page4').find('video').eq(0))
 		}
 	}
 })();
@@ -112,6 +112,16 @@ var swipe = {
 	scrolling: false,
 	scrollCurrent: 0,
 	scrollTarget: 1,
+	bind: function(){
+		//页面向上滑动事件绑定
+		$(swipe.scrollWrap).find('.swipe').swipeUp(function(){
+			if(swipe.scrolling){
+				return false;
+			}
+
+			swipe.fSwipe(swipe.scrollTarget)
+		})
+	},
 	page: function(i){
 		return $(this.scrollWrap).find('section.page'+(i+1));
 	},
@@ -157,12 +167,10 @@ var swipe = {
 		var self = this,
 			thisPage = self.page(i)
 
-		if(thisPage.hasClass('line_page')){
-			thisPage.find('.begin_show').removeClass('hidden')
-			thisPage.find('.begin_hidden').addClass('hidden')
-			thisPage.find('.begin_op1').css('opacity', 1)
-			thisPage.find('.begin_op0').css('opacity', 0)
-		}
+		thisPage.find('.begin_show').removeClass('hidden')
+		thisPage.find('.begin_hidden').addClass('hidden')
+		thisPage.find('.begin_op1').css('opacity', 1)
+		thisPage.find('.begin_op0').css('opacity', 0)
 	},
 	callback: function(i){
 		console.log('callback: ', i)
@@ -172,12 +180,52 @@ var swipe = {
 
 		switch (i) {
 			case 1:
-				self.able = false
+				// self.able = false
 				break;
 			case 2:
 				//Statements executed when the result of expression matches value2
 				break;
 			case 3:
+				//Statements executed when the result of expression matches valueN
+				break;
+			case 4:
+				//Statements executed when the result of expression matches valueN
+				break;
+			case 5:
+				//Statements executed when the result of expression matches valueN
+				break;
+			case 6:
+				self.able = false
+
+				//感观瓶拧瓶盖事件绑定
+				$('#rotate').swipeRight(function(){
+					var ganguanVedio0 = $('#ganguan0'),
+						ganguanVedio1 = $('#ganguan1'),
+						ganguanImg1 = $('#ganguanImg1')
+
+					ganguanVedio0.next('img').addClass('hidden')
+					video.play(ganguanVedio0, function(){
+						//显示底部『智能3D扫描』
+						thisPage.find('.slogan span')
+							.addClass('hidden')
+							.eq(1).removeClass('hidden')
+
+						//显示底部『3D人形影像已建立』
+						setTimeout(function(){
+							thisPage
+								.find('.slogan span')
+								.addClass('hidden')
+								.eq(2).removeClass('hidden')
+							}, 2500)
+
+						ganguanVedio0.addClass('hidden')
+						ganguanVedio1.removeClass('hidden')
+						ganguanImg1.removeClass('hidden')
+						video.play(ganguanVedio1, function(){
+							self.beAble()
+						})
+					})
+				})
 				//Statements executed when the result of expression matches valueN
 				break;
 			default:
@@ -239,14 +287,7 @@ window.addEventListener('orientationchange', function(event){
 });
 
 $(function() {
-
     FastClick.attach(document.body);
 
-	$(swipe.scrollWrap).find('.swipe').swipeUp(function(){
-		if(swipe.scrolling){
-			return false;
-		}
-
-		swipe.fSwipe(swipe.scrollTarget)
-	})
+    swipe.bind()
 })
