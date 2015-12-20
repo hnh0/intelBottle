@@ -231,6 +231,9 @@
 	background-size:187px  155px;*/
 	text-align: center;
 }
+.ganguan_pc.pc_share{
+	top: 16%;
+}
 .ganguan_pc img{
 	height: 155px;
 }
@@ -318,6 +321,7 @@
 .ganguan_pc_3 .line{
 	height: 26px;
 }
+
 .info_out .line{
 	position: absolute;
 	left: 50%;
@@ -340,6 +344,9 @@
 	text-align: center;
 	top: 58%;
 }
+.pc_info_detail_share{
+	top: 50%;
+}
 .pc_info_detail span{
 	display: inline-block;
 	line-height: 18px;
@@ -357,8 +364,22 @@
 	font-size: 1rem;
 	background: #00b0f1;
 	color: #fff;
+	width: 50px;
+	text-align: center;
 	margin-top: 8px;
 	border-radius: 1px;
+}
+.pc_info_detail .share_btn{
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	padding:0 14px;
+	font-size: 1rem;
+	color: #fff;
+	border:1px #5c96c5 solid;
+	margin-top: 8px;
+	width: 50px;
+	text-align: center;
 }
 .pc_bottle{
 	position: absolute;
@@ -371,7 +392,422 @@
 .pc_bottle img{
 	height: 90px;
 }
+.other_bottle{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.other_bottle img{
+	/*position: absolute;*/
+	width: 100%;
+}
+.other_handle{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 24px;
+	text-align: center;
+}
+.other_handle img{
+	height: 24px;
+	display: inline-block;
+}
+.other_handle span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 24px;
+	color: rgba(255, 254, 254, 0.79);
+}
+.other_bottle .other_handle_text{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	font-size: 1.2rem;
+	line-height: 24px;
+	color: rgba(255, 254, 254, 0.79);
+	text-align: center;
+}
+.other_list{
+	position: absolute;
+	width: 100%;
+	height: 64%;
+	bottom: 10%;
+	left: 0;
+}
+.other_list .other_item{
+	float: left;
+	height: 100%;
+	width: 20%;
+	text-align: center;
+	color: rgba(255, 254, 254, 0.79);
+	position: relative;
+}
+.other_list .other_item.ganguan_bottle{
+	width: 21%;
+}
+.other_list .other_item.wujie_bottle{
+	width: 20%;
+}
+.other_list .other_item.chaobo_bottle{
+	width: 21%;
+}
+.other_list .other_item.xingge_bottle{
+	width: 20%;
+}
+.other_list .other_item.huancai_bottle{
+	width: 18%;
+}
+.other_list .other_item span{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	bottom: 0;
+	left: 0;
+}
+.other_list .other_item img{
+	height: 80%;
+	width: auto;
+}
+.other_list .other_item.chaobo_bottle img{
+	height: 86%;
+}
+.other_list .other_item.xingge_bottle img{
+	height: 94%;
+}
+.other_list .other_item.huancai_bottle img{
+	height: 88%;
+	position: absolute;
+    left: -11%;
+}
+.layer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.67);
+}
+.layer .share_lbl{
+	position: absolute;
+	height: 20px;
+	line-height: 20px;
+	padding:0 24px 0 16px;
+	font-size: 1rem;
+	border:1px #546472 solid;
+	color: #fff;
+	background: #000a12 url(../img/intel_angle_up.png) no-repeat;
+	background-position: 106px center;
+    -webkit-background-size: 11px 7px;
+	top: 20px;
+	right: 20px;
+}
+.xingge_pc_slogan{
+	top: 12%;
+}
+.xingge_pc{
+	position: absolute;
+	width: 174px;
+	height: 165px;
+	top: 22%;
+	left: 50%;
+	margin-left: -87px;
+	/*background: url(../img/xingge_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
 
+.xingge_pc.pc_share{
+	top: 16%;
+}
+.xingge_pc img{
+	height: 165px;
+}
+.xingge_pc .xingge_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.xingge_pc .xingge_1, .xingge_pc_1 .xingge_1{
+	top: 80px;
+	right: 32px;
+}
+.xingge_pc .xingge_2, .xingge_pc_1 .xingge_2{
+	top: 28px;
+	right: 95px;
+}
+.xingge_pc .xingge_3, .xingge_pc_1 .xingge_3{
+	top: 128px;
+	left: 10px;
+}
+.xingge_pc_2{
+	width: 204px;
+	height: 139px;
+	margin-left: -102px;
+}
+.xingge_pc_2 img{
+	height: 139px;
+}
+.xingge_pc_2 .xingge_1{
+	top: 107px;
+	right: 32px;
+}
+.xingge_pc_2 .xingge_2{
+	top: 21px;
+	left: 143px;
+}
+.xingge_pc_2 .xingge_3{
+	top: 103px;
+	left: 29px;
+}
+.xingge_pc_3{
+	width: 217px;
+	height: 130px;
+	margin-left: -109px;
+}
+.xingge_pc_3 img{
+	height: 130px;
+}
+.xingge_pc_3 .xingge_1{
+	top: 9px;
+	left: 58px;
+}
+.xingge_pc_3 .xingge_2{
+	top: 66px;
+	right: 173px;
+}
+.xingge_pc_3 .xingge_3{
+	top: 63px;
+	left: 144px;
+}
+.xingge_pc_1 .info_out{
+	top: -68px;
+	right: -34px;
+}
+.xingge_pc_2 .info_out{
+	top: -60px;
+	right: -37px;
+}
+.xingge_pc_3 .info_out{
+	top: -64px;
+	right: -16px;
+}
+.xingge_pc_1 .line{
+	height: 108px;
+}
+.xingge_pc_2 .line{
+	height: 43px;
+}
+.xingge_pc_3 .line{
+	height: 87px;
+}
+.chaobo_pc_slogan{
+	top: 12%;
+}
+.chaobo_pc{
+	position: absolute;
+	width: 241px;
+	height: 154px;
+	top: 24%;
+	left: 50%;
+	margin-left: -121px;
+	/*background: url(../img/chaobo_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
+
+.chaobo_pc.pc_share{
+	top: 16%;
+}
+.chaobo_pc img{
+	height: 154px;
+}
+.chaobo_pc .chaobo_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.chaobo_pc .chaobo_1, .chaobo_pc_1 .chaobo_1{
+	top: 113px;
+	right: 54px;
+}
+.chaobo_pc .chaobo_2, .chaobo_pc_1 .chaobo_2{
+	top: 36px;
+	right: 223px;
+}
+.chaobo_pc .chaobo_3, .chaobo_pc_1 .chaobo_3{
+	top: 128px;
+	left: 51px;
+}
+.chaobo_pc_2{
+	width: 261px;
+	height: 12px;
+	margin-left: -130px;
+	top: 38%;
+}
+.chaobo_pc_2 img{
+	height: 12px;
+}
+.chaobo_pc_2 .chaobo_1{
+	top: -4px;
+	right: 36px;
+}
+.chaobo_pc_2 .chaobo_2{
+	top: -4px;
+	left: 162px;
+}
+.chaobo_pc_2 .chaobo_3{
+	top: -4px;
+	left: 5px;
+}
+.chaobo_pc_3{
+	width: 217px;
+	height: 130px;
+	margin-left: -109px;
+}
+.chaobo_pc_3 img{
+	height: 130px;
+}
+.chaobo_pc_3 .chaobo_1{
+	top: 89px;
+	left: 144px;
+}
+.chaobo_pc_3 .chaobo_2{
+	top: 32px;
+	right: 170px;
+}
+.chaobo_pc_3 .chaobo_3{
+	top: 18px;
+	left: 98px;
+}
+.chaobo_pc_1 .info_out{
+	top: -68px;
+	right: 0px;
+}
+.chaobo_pc_2 .info_out{
+	top: -92px;
+	right: 24px;
+}
+.chaobo_pc_3 .info_out{
+	top: -50px;
+	right: 38px;
+}
+.chaobo_pc_1 .line{
+	height: 125px;
+}
+.chaobo_pc_2 .line{
+	height: 33px;
+}
+.chaobo_pc_3 .line{
+	height: 28px;
+}
+.wujie_pc_slogan{
+	top: 12%;
+}
+.wujie_pc{
+	position: absolute;
+	width: 238px;
+	height: 131px;
+	top: 26%;
+	left: 50%;
+	margin-left: -119px;
+	/*background: url(../img/wujie_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
+
+.wujie_pc.pc_share{
+	top: 16%;
+}
+.wujie_pc img{
+	height: 131px;
+}
+.wujie_pc .wujie_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.wujie_pc .wujie_1, .wujie_pc_1 .wujie_1{
+	top: -5px;
+	right: 52px;
+}
+.wujie_pc .wujie_2, .wujie_pc_1 .wujie_2{
+	top: 27px;
+	right: 183px;
+}
+.wujie_pc .wujie_3, .wujie_pc_1 .wujie_3{
+	top: 117px;
+	left: 186px;
+}
+.wujie_pc_2{
+	width: 251px;
+	height: 129px;
+	margin-left: -126px;
+	top: 26%;
+}
+.wujie_pc_2 img{
+	height: 129px;
+}
+.wujie_pc_2 .wujie_1{
+	top: -4px;
+	right: 36px;
+}
+.wujie_pc_2 .wujie_2{
+	top: -4px;
+	left: 162px;
+}
+.wujie_pc_2 .wujie_3{
+	top: -4px;
+	left: 5px;
+}
+.wujie_pc_3{
+	width: 217px;
+	height: 130px;
+	margin-left: -109px;
+}
+.wujie_pc_3 img{
+	height: 130px;
+}
+.wujie_pc_3 .wujie_1{
+	top: 89px;
+	left: 144px;
+}
+.wujie_pc_3 .wujie_2{
+	top: 32px;
+	right: 170px;
+}
+.wujie_pc_3 .wujie_3{
+	top: 18px;
+	left: 98px;
+}
+.wujie_pc_1 .info_out{
+	top: -68px;
+	right: -15px;
+}
+.wujie_pc_2 .info_out{
+	top: -92px;
+	right: 24px;
+}
+.wujie_pc_3 .info_out{
+	top: -50px;
+	right: 38px;
+}
+.wujie_pc_1 .line{
+	height: 22px;
+}
+.wujie_pc_2 .line{
+	height: 33px;
+}
+.wujie_pc_3 .line{
+	height: 28px;
+}
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
     	bottom:60%;
