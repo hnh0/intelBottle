@@ -271,7 +271,7 @@ video{
   position: absolute;
   text-align: center;
   bottom: 4%;
-  z-index: 2;
+  z-index: 4;
 }
 .turn{
   width: 25px;
@@ -301,14 +301,18 @@ video{
   background: url(../img/slogan_left.png) no-repeat 0 center;
   background-size: 14px 56px;
   display: block;
-  float: left;
-  margin-left: -18px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-left: -14px;
 }
-.slogan::before{
+.slogan::after{
   background-image: url(../img/slogan_right.png);
   display: block;
-  float: right;
-  margin-right: -18px;
+  left: auto;
+  right: 0;
+  margin-left: 0;
+  margin-right: -14px;
 }
 .slogan span{
     display: inline-block;
