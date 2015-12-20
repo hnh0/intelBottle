@@ -79,7 +79,7 @@ var swipe = {
 		oThis
 			.animate({
 				marginTop: -self.iHeight
-				}, 600, function() {
+				}, 300, function() {
 				oSons.eq(0).appendTo(oThis)
 				oThis
 					.css({marginTop: 0})
