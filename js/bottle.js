@@ -61,7 +61,7 @@
 		bottle.hidePc(type);
 		bottle.showPcIndex(type, index);
 	});
-	$('.other_handle').on('click', function () {
+	$('.other_handle').on('touchstart', function () {
 		var pc_info = $(this).closest('.pc_info');
 		bottle.showOtherBottle(pc_info);
 	});
