@@ -93,6 +93,12 @@ var videoChange = {
 				img_line_computer.removeClass('hidden')
 				video.play(video_line_computer, function(){
 					page.find('.bottom_text').addClass('hidden')
+					page.find('.pc_info').animate({
+						opacity: 1
+					}, 600, function() {})
+					page.find('.line_video_wrap').animate({
+						opacity: 0
+					}, 600, function() {})
 				})
 			})
 		})
