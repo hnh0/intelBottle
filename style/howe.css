@@ -752,61 +752,64 @@
 	margin-left: -126px;
 	top: 26%;
 }
+.wujie_pc_2 .line{
+	left: 25%;
+}
 .wujie_pc_2 img{
 	height: 129px;
 }
 .wujie_pc_2 .wujie_1{
-	top: -4px;
-	right: 36px;
+	top: 39px;
+	right: 102px;
 }
 .wujie_pc_2 .wujie_2{
-	top: -4px;
-	left: 162px;
+	top: 8px;
+	left: 41px;
 }
 .wujie_pc_2 .wujie_3{
-	top: -4px;
-	left: 5px;
+	top: 100px;
+	left: 172px;
 }
 .wujie_pc_3{
-	width: 217px;
-	height: 130px;
-	margin-left: -109px;
+	width: 222px;
+	height: 142px;
+	margin-left: -111px;
 }
 .wujie_pc_3 img{
-	height: 130px;
+	height: 142px;
 }
 .wujie_pc_3 .wujie_1{
-	top: 89px;
-	left: 144px;
+	top: -5px;
+	left: 122px;
 }
 .wujie_pc_3 .wujie_2{
-	top: 32px;
-	right: 170px;
+	top: 63px;
+	right: 109px;
 }
 .wujie_pc_3 .wujie_3{
-	top: 18px;
-	left: 98px;
+	top: 109px;
+	left: 30px;
 }
 .wujie_pc_1 .info_out{
 	top: -68px;
 	right: -15px;
 }
 .wujie_pc_2 .info_out{
-	top: -92px;
-	right: 24px;
+	top: -60px;
+	left: -1px;
 }
 .wujie_pc_3 .info_out{
-	top: -50px;
-	right: 38px;
+	top: -62px;
+	left: -45px;
 }
 .wujie_pc_1 .line{
 	height: 22px;
 }
 .wujie_pc_2 .line{
-	height: 33px;
+	height: 24px;
 }
 .wujie_pc_3 .line{
-	height: 28px;
+	height: 130px;
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
