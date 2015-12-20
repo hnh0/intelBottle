@@ -26,6 +26,19 @@
 			if(type && index){
 				$('.' + type + '_pc_' + index).removeClass('hidden');
 			}
+		},
+		showOtherBottle: function (pc_info) {
+			pc_info.find('.other_handle').addClass('hidden');
+			pc_info.find('.other_bottle').removeClass('hidden');
+			pc_info.find('.pc_bottle').addClass('hidden');
+			pc_info.find('.info_pc_item').addClass('hidden');
+			pc_info.find('.pc_info_detail').addClass('hidden');
+			pc_info.find('.slogan_wrap').addClass('hidden');
+			pc_info.find('.pc_share').removeClass('hidden');
+			pc_info.find('.pc_info_detail_share').removeClass('hidden');
+		},
+		showShare: function (pc_info) {
+			pc_info.find('.layer').removeClass('hidden');
 		}
 	};
 
@@ -47,5 +60,21 @@
 			type = $(this).closest('.pc_info').attr('type');
 		bottle.hidePc(type);
 		bottle.showPcIndex(type, index);
+	});
+	$('.other_handle').on('click', function () {
+		var pc_info = $(this).closest('.pc_info');
+		bottle.showOtherBottle(pc_info);
+	});
+	$('.other_item').on('click', function () {
+		var index = $(this).attr('index');
+		console.log(index);
+	});
+	$('.share_btn').on('click', function () {
+		var pc_info = $(this).closest('.pc_info');
+		bottle.showShare(pc_info);
 	})
 })();
+
+
+
+
