@@ -186,7 +186,10 @@
 	text-shadow: 0px 0px 6px #14a8c6, 0px 0px 6px #14a8c6;
 }
 
-
+.page_detail{
+	background: url(../img/star_bg.jpg) no-repeat center bottom;
+	background-size: 100% auto;
+}
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
     	bottom:60%;

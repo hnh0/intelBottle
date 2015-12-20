@@ -194,6 +194,56 @@ video{
         opacity: 0
     }
 }
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate .fadeOut {
+  -webkit-animation-name: fadeOut 1s ease-out;
+  animation-name: fadeOut 1s ease-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 .logo{
   position: absolute;
   left: 5%;
@@ -229,6 +279,7 @@ video{
   margin: 0 14px;
   padding: 0 3px;
   letter-spacing: 2px;
+  position: relative;
 }
 .slogan::before,
 .slogan::after{
@@ -247,3 +298,10 @@ video{
   float: right;
   margin-right: -18px;
 }
+.slogan span{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
