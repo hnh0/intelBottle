@@ -194,6 +194,12 @@ video{
         opacity: 0
     }
 }
+.animated {
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
@@ -214,9 +220,9 @@ video{
   }
 }
 
-.animate .fadeOut {
-  -webkit-animation-name: fadeOut 1s ease-out;
-  animation-name: fadeOut 1s ease-out;
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 @-webkit-keyframes fadeIn {
@@ -239,7 +245,7 @@ video{
   }
 }
 
-.animate .fadeIn {
+.fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
