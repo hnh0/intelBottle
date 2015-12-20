@@ -6,7 +6,8 @@
 		bind: function(){
 
 		},
-		play: function(target){
+		start: function(target){
+			target.removeClass('hidden')
 			target[0].play()
 		},
 		/***
@@ -14,42 +15,94 @@
 		* img: (boolen) 默认显示图片，true不显示
 		* callback: (function) 回调函数
 		**/
-		end: function(target, img, callback){
+		end: function(target, callback){
 			target[0].addEventListener('ended', function(){
-				if(!img){
-					var img = target.find('img')
-					target
-						.after(img)
-						.addClass('hidden')
-				}
+				target
+					// .after(img)
+					.addClass('hidden')
 
 				if(callback)callback()
 			},false)
 		},
-		play_end: function(obj){
-			this.play(obj)
-			this.end(obj)
+		play: function(obj, callback){
+			this.start(obj)
+			this.end(obj, callback)
 		},
 		landscape: function (){
-			$('#guige2')
+			$('#xingge2')
 				.addClass('hidden')
 			$('.video_img').eq(0).addClass('hidden')
 
-			$('#guige1').removeClass('hidden')
+			$('#xingge1').removeClass('hidden')
 			$('.video_img').eq(1).removeClass('hidden')
-			video.play_end($(swipe.scrollWrap).find('.page3').find('video').eq(1))
+			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(1))
 		},
 		portrait: function (){
-			$('#guige1')
+			$('#xingge1')
 				.addClass('hidden')
 			$('.video_img').eq(1).addClass('hidden')
 
-			$('#guige2').removeClass('hidden')
+			$('#xingge2').removeClass('hidden')
 			$('.video_img').eq(0).removeClass('hidden')
-			video.play_end($(swipe.scrollWrap).find('.page3').find('video').eq(0))
+			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(0))
 		}
 	}
 })();
+
+//变换视频方法
+var videoChange = {
+	init: function(){
+
+	},
+	bind: function(){
+
+	},
+	start: function(page){
+		var self = this,
+			videoWrap = page.find('.line_video_wrap')
+
+		videoWrap
+			.find('img.video_img, img.img_line_bottle').animate({
+				opacity: 0
+			},300, function() {
+				video.play(videoWrap.find('video.video_line_bottle'), function(){
+					self.change(page)
+				})
+			});
+	},
+	change: function(page){
+		var self = this,
+			// videoWrap = page.find('.line_video_wrap'),
+			changeVideos = page.find('.change_videos'),
+			ball_show = changeVideos.find('.ball_show'),
+			ball_hide = changeVideos.find('.ball_hide'),
+			space = changeVideos.find('.space'),
+
+			video_line_computer = page.find('.video_line_computer'),
+			img_line_computer = page.find('.img_line_computer')
+
+		changeVideos
+			.css('opacity', 1)
+		video.play(ball_show, function(){
+			ball_show.css('opacity', 0)
+			ball_hide.css('opacity', 1)
+			video.play(ball_hide, function(){
+				page.removeClass('black')				
+
+				video_line_computer.removeClass('hidden')
+				img_line_computer.removeClass('hidden')
+				video.play(video_line_computer, function(){
+					page.find('.bottom_text').addClass('hidden')
+				})
+			})
+		})
+
+		page
+			.addClass('black')
+			.find('.slogan_top, .bottom_text_normal').addClass('hidden')
+		page.find('.restructuring').removeClass('hidden')
+	}
+}
 
 //向上滑动方法
 var swipe = {
@@ -66,6 +119,8 @@ var swipe = {
 		if(!this.able){
 			return false
 		}
+
+		this.beforeSwipe(i)
 
 		var self = this,
 			oThis = $(self.scrollWrap),
@@ -96,9 +151,24 @@ var swipe = {
 		this.able = true
 		$('.down_tip.hidden').removeClass('hidden')
 	},
+	beforeSwipe: function(i){
+		console.log('beforeSwipe: ', i)
+
+		var self = this,
+			thisPage = self.page(i)
+
+		if(thisPage.hasClass('line_page')){
+			thisPage.find('.begin_show').removeClass('hidden')
+			thisPage.find('.begin_hidden').addClass('hidden')
+			thisPage.find('.begin_op1').css('opacity', 1)
+			thisPage.find('.begin_op0').css('opacity', 0)
+		}
+	},
 	callback: function(i){
-		console.log(i)
-		var self = this
+		console.log('callback: ', i)
+
+		var self = this,
+			thisPage = self.page(i)
 
 		switch (i) {
 			case 1:
@@ -108,14 +178,16 @@ var swipe = {
 				//Statements executed when the result of expression matches value2
 				break;
 			case 3:
-				self.page(3).find('.slogan_top, .bottom_text').animate({
-					opacity: 1
-					}, 500, function() {});
 				//Statements executed when the result of expression matches valueN
 				break;
 			default:
 				//Statements executed when none of the values match the value of the expression
 				break;
+		}
+
+		if(thisPage.hasClass('line_page')){
+			videoChange.start(thisPage)
+			// videoChange.start(swipe.page(i))
 		}
 	}
 }
@@ -148,6 +220,8 @@ window.addEventListener('orientationchange', function(event){
     	//竖屏
         console.log("竖屏");
 
+		swipe.beAble()
+
 		if(swipe.scrollCurrent == 2){
 			video.portrait()
 		}
@@ -155,6 +229,8 @@ window.addEventListener('orientationchange', function(event){
     if( window.orientation == 90 || window.orientation == -90 ) {
     	//横屏
         console.log("横屏");
+
+		swipe.able = false
 
 		if(swipe.scrollCurrent == 2){
 			video.landscape()

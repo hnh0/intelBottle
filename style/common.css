@@ -11,7 +11,7 @@ html{font-size: 62.5%;}
 body {
   font-family: "intel-clear", "intel-clear-cyrillic", "SimHei","SimSun",Arial,sans-serif !important;
   line-height: 1;
-  background-color: #fff;
+  background-color: #080f18;
 }
 body, html {
   display: block;
@@ -105,10 +105,15 @@ a {
 
 video{
   width: 100%;
+  position: relative;
+  z-index: 2;
+  top: 0;
 }
 .video_img{
   width: 100%;
   display: block;
+  position: absolute;
+  top: 0;
 }
 /*.bg_1{
   background: url(../img/bg_1.jpg) no-repeat center 0;
@@ -254,7 +259,7 @@ video{
   position: absolute;
   left: 5%;
   top: 4%;
-  z-index: 2;
+  z-index: 3;
   width: 38px;
   height: 24px;
   background: url("../img/logo.png") no-repeat;
@@ -266,6 +271,7 @@ video{
   position: absolute;
   text-align: center;
   bottom: 4%;
+  z-index: 2;
 }
 .turn{
   width: 25px;
