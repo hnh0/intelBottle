@@ -241,7 +241,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .ganguan_pc .ganguan_1, .ganguan_pc_1 .ganguan_1{
 	top: -3px;
@@ -531,7 +530,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .xingge_pc .xingge_1, .xingge_pc_1 .xingge_1{
 	top: 80px;
@@ -631,7 +629,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .chaobo_pc .chaobo_1, .chaobo_pc_1 .chaobo_1{
 	top: 113px;
@@ -732,7 +729,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .wujie_pc .wujie_1, .wujie_pc_1 .wujie_1{
 	top: -5px;
@@ -837,7 +833,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .huancai_pc .huancai_1, .huancai_pc_1 .huancai_1{
 	top: 24px;
