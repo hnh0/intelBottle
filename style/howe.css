@@ -811,6 +811,112 @@
 .wujie_pc_3 .line{
 	height: 130px;
 }
+
+.huancai_pc_slogan{
+	top: 12%;
+}
+.huancai_pc{
+	position: absolute;
+	width: 241px;
+	height: 151px;
+	top: 23%;
+	left: 50%;
+	margin-left: -121px;
+	/*background: url(../img/huancai_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
+
+.huancai_pc.pc_share{
+	top: 16%;
+}
+.huancai_pc img{
+	height: 151px;
+}
+.huancai_pc .huancai_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.huancai_pc .huancai_1, .huancai_pc_1 .huancai_1{
+	top: 24px;
+	right: 55px;
+}
+.huancai_pc .huancai_2, .huancai_pc_1 .huancai_2{
+	top: 25px;
+	right: 226px;
+}
+.huancai_pc .huancai_3, .huancai_pc_1 .huancai_3{
+	top: 117px;
+	left: 141px;
+}
+.huancai_pc_2{
+	width: 101px;
+	height: 210px;
+	margin-left: -52px;
+	top: 13%;
+}
+.huancai_pc_2 .line{
+	left: 25%;
+}
+.huancai_pc_2 img{
+	height: 210px;
+}
+.huancai_pc_2 .huancai_1{
+	top: 84px;
+	right: 88px;
+}
+.huancai_pc_2 .huancai_2{
+	top: 120px;
+	left: 77px;
+}
+.huancai_pc_2 .huancai_3{
+	top: 165px;
+	left: 37px;
+}
+.huancai_pc_3{
+	width: 160px;
+	height: 178px;
+	margin-left: -80px;
+	top: 19%;
+}
+.huancai_pc_3 img{
+	height: 178px;
+}
+.huancai_pc_3 .huancai_1{
+	top: 148px;
+	left: 138px;
+}
+.huancai_pc_3 .huancai_2{
+	top: 144px;
+	right: 133px;
+}
+.huancai_pc_3 .huancai_3{
+	top: 15px;
+	left: 122px;
+}
+.huancai_pc_1 .info_out{
+	top: -68px;
+	right: 7px;
+}
+.huancai_pc_2 .info_out{
+	top: -29px;
+	right: -83px;
+}
+.huancai_pc_3 .info_out{
+	top: -62px;
+	right: -73px;
+}
+.huancai_pc_1 .line{
+	height: 52px;
+}
+.huancai_pc_2 .line{
+	height: 110px;
+}
+.huancai_pc_3 .line{
+	height: 39px;
+}
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
     	bottom:60%;
