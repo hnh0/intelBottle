@@ -11,7 +11,8 @@ html{font-size: 62.5%;}
 body {
   font-family: "intel-clear", "intel-clear-cyrillic", "SimHei","SimSun",Arial,sans-serif !important;
   line-height: 1;
-  background-color: #080f18;
+  background: #080f18 url(../img/bg.jpg) repeat-y center 0;
+  background-size: 100% auto;
 }
 body, html {
   display: block;
@@ -279,7 +280,7 @@ video{
 .turn{
   width: 25px;
   display: block;
-  margin: 0 auto -6px;
+  margin: -6px auto -6px;
 }
 .slogan{
   min-width: 200px;
@@ -324,3 +325,73 @@ video{
     left: 0;
 }
 
+.main{
+}
+.page_list{
+  width: 100%;
+  height: 100%;
+  background: url(../img/list_bg_2.jpg) no-repeat center 0;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+.bottles{
+  width: 320px;
+  height: 320px;
+  position: relative;
+  background: url(../img/list_circle.png) no-repeat center 30%;
+  background-size: 80% auto;
+  margin: 20% auto;
+  z-index: 1;
+}
+.bottles li{
+  width: 120px;
+  height: 20px;
+  padding-top: 120px;
+  text-align: center;
+  color: #fff;
+  background: url(../img/bottle/bottle_huancai.png) no-repeat center 0;
+  background-size: 120px 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -40px 0 0 35px;
+  z-index: 1;
+}
+#bottle_1{
+  margin: -40px 0 0 170px;
+  background-image: url(../img/bottle/bottle_wujie.png);
+}
+#bottle_2{
+  margin: 100px 0 0 -15px;
+  background-image: url(../img/bottle/bottle_ganguan.png);
+}
+#bottle_3{
+  margin: 100px 0 0 220px;
+  background-image: url(../img/bottle/bottle_chaobo.png); 
+}
+#bottle_4{
+  margin: 210px 0 0 100px;
+  background-image: url(../img/bottle/bottle_xingge.png);
+}
+
+#bottle_3ddd{
+  width: 300px;
+  height: 20px;
+  padding-top: 300px;
+  background-size: 300px 300px;
+  margin: 0 0 0 -150px;
+  left: 50%;
+  font-size: 14px;
+  text-shadow: 0px 0px 8px #2cbbd8, 0px 0px 8px #2cbbd8;
+  display: block;
+}
+
+.black_bg{
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg_1.jpg) no-repeat center 0;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}

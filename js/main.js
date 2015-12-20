@@ -35,7 +35,7 @@
 
 			$('#xingge1').removeClass('hidden')
 			$('.video_img').eq(1).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page4').find('video').eq(1))
+			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(1))
 		},
 		portrait: function (){
 			$('#xingge1')
@@ -44,7 +44,7 @@
 
 			$('#xingge2').removeClass('hidden')
 			$('.video_img').eq(0).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page4').find('video').eq(0))
+			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(0))
 		}
 	}
 })();
@@ -120,13 +120,14 @@ var swipe = {
 	scrollCurrent: 0,
 	scrollTarget: 1,
 	bind: function(){
+		var self = this
 		//页面向上滑动事件绑定
-		$(swipe.scrollWrap).find('.swipe').swipeUp(function(){
-			if(swipe.scrolling){
+		$(self.scrollWrap).find('.swipe').swipeUp(function(){
+			if(self.scrolling){
 				return false;
 			}
 
-			swipe.fSwipe(swipe.scrollTarget)
+			self.fSwipe(self.scrollTarget)
 		})
 	},
 	page: function(i){
@@ -137,6 +138,9 @@ var swipe = {
 			return false
 		}
 
+		if(!i){
+			i = this.scrollTarget
+		}
 		this.beforeSwipe(i)
 
 		var self = this,
@@ -169,7 +173,7 @@ var swipe = {
 		$('.down_tip.hidden').removeClass('hidden')
 	},
 	beforeSwipe: function(i){
-		console.log('beforeSwipe: ', i)
+		// console.log('beforeSwipe: ', i)
 
 		var self = this,
 			thisPage = self.page(i)
@@ -181,7 +185,7 @@ var swipe = {
 			.find('.begin_op0').css('opacity', 0)
 	},
 	callback: function(i){
-		console.log('callback: ', i)
+		// console.log('callback: ', i)
 
 		var self = this,
 			thisPage = self.page(i)
@@ -193,7 +197,7 @@ var swipe = {
 			case 2:
 				//Statements executed when the result of expression matches value2
 				break;
-			case 6:
+			case 4:
 				self.able = false
 
 				//感观瓶拧瓶盖事件绑定
@@ -226,7 +230,7 @@ var swipe = {
 					})
 				})
 				break;
-			case 9:
+			case 6:
 				self.able = false
 
 				//无界瓶按住麦克风事件绑定
@@ -245,11 +249,11 @@ var swipe = {
 				})
 
 				break;
-			case 12:
+			case 8:
 				//幻彩瓶
 				self.able = false
 				break;
-			case 15:
+			case 10:
 				//超薄瓶
 				self.able = false
 
@@ -338,6 +342,45 @@ window.addEventListener('orientationchange', function(event){
 			video.landscape()
 		}
     }
+});
+
+var oBottles = $('#bottles'),
+	aBottles = [8, 6, 4, 10, 2]
+
+oBottles.find('li').click(function(event) {
+	var oThis = $(this),
+		iIdx = oThis.index(),
+		time = 500
+
+	swipe.scrollTarget = aBottles[iIdx]
+
+	oBottles
+		.css('background', 'none')
+		.next('.slogan_wrap').find('.slogan').html(oThis.data('text'))
+
+	oThis
+		.removeClass('unselected')
+		.css('z-index', 3)
+		.animate({
+			width: 300,
+			height: 20,
+			paddingTop: 300,
+			backgroundSize: '300px 300px',
+			margin: '0 0 0 -150px',
+			left: '50%',
+			fontSize: '16px',
+			textShadow: '0px 0px 8px #2cbbd8, 0px 0px 8px #2cbbd8'
+		}, time, function() {
+			swipe.beAble()
+		})
+
+	oBottles.find('li.unselected').animate({
+		opacity: 0
+	}, time, function() {});
+
+	$('#black_bg').animate({
+		opacity: 1
+	}, time, function() {});
 });
 
 $(function() {
