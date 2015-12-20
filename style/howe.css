@@ -210,6 +210,168 @@
 	left: 50%;
 	margin-left: -20px;
 }
+.computer_detail{
+	background: url(../img/computer_bg.jpg) no-repeat center bottom;
+	background-size: 100% auto;
+}
+.ganguan_pc_slogan{
+	top: 12%;
+}
+.ganguan_pc_slogan .slogan{
+	letter-spacing: 0px;
+}
+.ganguan_pc{
+	position: absolute;
+	width: 187px;
+	height: 155px;
+	top: 26%;
+	left: 50%;
+	margin-left: -94px;
+	/*background: url(../img/ganguan_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
+.ganguan_pc img{
+	height: 155px;
+}
+.ganguan_pc .ganguan_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.ganguan_pc .ganguan_1, .ganguan_pc_1 .ganguan_1{
+	top: -3px;
+	right: 28px;
+}
+.ganguan_pc .ganguan_2, .ganguan_pc_1 .ganguan_2{
+	top: 60px;
+	right: 24px;
+}
+.ganguan_pc .ganguan_3, .ganguan_pc_1 .ganguan_3{
+	top: 25px;
+	left: 65px;
+}
+.ganguan_pc_2{
+	width: 184px;
+	height: 142px;
+	margin-left: -92px;
+}
+.ganguan_pc_2 img{
+	height: 142px;
+}
+.ganguan_pc_2 .ganguan_1{
+	top: -4px;
+	right: 24px;
+}
+.ganguan_pc_2 .ganguan_2{
+	top: 46px;
+	left: 49px;
+}
+.ganguan_pc_2 .ganguan_3{
+	top: 78px;
+	left: 60px;
+}
+.ganguan_pc_3{
+	width: 217px;
+	height: 130px;
+	margin-left: -109px;
+}
+.ganguan_pc_3 img{
+	height: 130px;
+}
+.ganguan_pc_3 .ganguan_1{
+	top: 108px;
+	left: 71px;
+}
+.ganguan_pc_3 .ganguan_2{
+	top: 56px;
+	right: 26px;
+}
+.ganguan_pc_3 .ganguan_3{
+	top: -4px;
+	left: 114px;
+}
+
+.info_out{
+	position: absolute;
+	box-shadow:0px 0px 4px rgba(102, 170, 198, 0.74);
+}
+.ganguan_pc_1 .info_out{
+	top: -76px;
+	right: -41px;
+}
+.ganguan_pc_2 .info_out{
+	top: -70px;
+	left: -14px;
+}
+.ganguan_pc_3 .info_out{
+	top: -70px;
+	right: -2px;
+}
+.ganguan_pc_1 .line{
+	height: 30px;
+}
+.ganguan_pc_2 .line{
+	height: 76px;
+}
+.ganguan_pc_3 .line{
+	height: 26px;
+}
+.info_out .line{
+	position: absolute;
+	left: 50%;
+	width: 1px;
+	background: rgba(0, 174, 239, 0.3);
+}
+.info_in{
+	padding:8px 10px;
+	text-align: left;
+	font-size: 1.2rem;
+	line-height: 16px;
+	color: #3ec9fc;
+	border:1px rgba(30, 93, 128, 0.1) solid;
+	box-shadow: inset 0px 0px 4px rgba(102, 170, 198, 0.74);
+
+}
+.pc_info_detail{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 58%;
+}
+.pc_info_detail span{
+	display: inline-block;
+	line-height: 18px;
+	font-size: 1.2rem;
+	color: #fffefe;
+}
+.pc_info_detail span.pc_name{
+	color: #f6d257;
+}
+.pc_info_detail .buy_btn{
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	padding:0 14px;
+	font-size: 1rem;
+	background: #00b0f1;
+	color: #fff;
+	margin-top: 8px;
+	border-radius: 1px;
+}
+.pc_bottle{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+}
+.pc_bottle img{
+	height: 90px;
+}
+
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
     	bottom:60%;
@@ -236,6 +398,10 @@
     .ip5.list_bottle.ganguan_bottle,.ip5.list_bottle.chaobo_bottle{
     	bottom: 43%;
     }
+    .ganguan_pc_2 .info_out{
+		top: -70px;
+		left: -18px;
+	}
 }
 @media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
     

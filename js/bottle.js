@@ -15,6 +15,17 @@
 		},
 		showList: function () {
 			$('.bottle_list_circle').show();
+		},
+		hidePc: function (type) {
+			$('.pc_info .slogan_wrap').addClass('hidden');
+			$('.pc_info .pc_pc').addClass('hidden');
+			$('.' + type + '_pc').addClass('hidden');
+			
+		},
+		showPcIndex: function (type, index) {
+			if(type && index){
+				$('.' + type + '_pc_' + index).removeClass('hidden');
+			}
 		}
 	};
 
@@ -30,5 +41,11 @@
 	});
 	$('.main_statement').on('click', function () {
 		$('.main_statement').addClass('hidden');
+	});
+	$('.ganguan_point').on('click', function () {
+		var index = $(this).attr('index'),
+			type = $(this).closest('.pc_info').attr('type');
+		bottle.hidePc(type);
+		bottle.showPcIndex(type, index);
 	})
 })();
