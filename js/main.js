@@ -64,7 +64,7 @@ var videoChange = {
 		videoWrap
 			.find('img.video_img, img.img_line_bottle').animate({
 				opacity: 0
-			},300, function() {
+			},500, function() {
 				video.play(videoWrap.find('video.video_line_bottle'), function(){
 					self.change(page)
 				})
@@ -92,8 +92,9 @@ var videoChange = {
 				video_line_computer.removeClass('hidden')
 				img_line_computer.removeClass('hidden')
 				video.play(video_line_computer, function(){
-					page.find('.bottom_text').addClass('hidden')
-					page.find('.pc_info').animate({
+					page
+						.find('.bottom_text').addClass('hidden').end()
+						.find('.pc_info').animate({
 						opacity: 1
 					}, 600, function() {})
 					page.find('.line_video_wrap').animate({
@@ -173,10 +174,11 @@ var swipe = {
 		var self = this,
 			thisPage = self.page(i)
 
-		thisPage.find('.begin_show').removeClass('hidden')
-		thisPage.find('.begin_hidden').addClass('hidden')
-		thisPage.find('.begin_op1').css('opacity', 1)
-		thisPage.find('.begin_op0').css('opacity', 0)
+		thisPage
+			.find('.begin_show').removeClass('hidden').end()
+			.find('.begin_hidden').addClass('hidden').end()
+			.find('.begin_op1').css('opacity', 1).end()
+			.find('.begin_op0').css('opacity', 0)
 	},
 	callback: function(i){
 		console.log('callback: ', i)
@@ -186,19 +188,10 @@ var swipe = {
 
 		switch (i) {
 			case 1:
-				// self.able = false
+				self.able = false
 				break;
 			case 2:
 				//Statements executed when the result of expression matches value2
-				break;
-			case 3:
-				//Statements executed when the result of expression matches valueN
-				break;
-			case 4:
-				//Statements executed when the result of expression matches valueN
-				break;
-			case 5:
-				//Statements executed when the result of expression matches valueN
 				break;
 			case 6:
 				self.able = false
@@ -232,7 +225,39 @@ var swipe = {
 						})
 					})
 				})
-				//Statements executed when the result of expression matches valueN
+				break;
+			case 9:
+				self.able = false
+
+				//无界瓶按住麦克风事件绑定
+				$('#microphone').longTap(function(){
+					var wujieVedio0 = $('#wujie0'),
+						wujieImg0 = $('#wujieImg0'),
+						wujieImg1 = $('#wujieImg1')
+
+					wujieVedio0.next('img').addClass('hidden')
+					video.play(wujieVedio0, function(){
+						wujieVedio0.addClass('hidden')
+						wujieImg1.removeClass('hidden')
+						self.beAble()
+					})
+
+				})
+
+				break;
+			case 12:
+				//幻彩瓶
+				self.able = false
+				break;
+			case 15:
+				//超薄瓶
+				self.able = false
+
+				var chaobaoVideo0 = thisPage.find('video:first')
+				video.play(chaobaoVideo0, function(){
+					chaobaoVideo0.next('img').removeClass('hidden')
+					self.beAble()
+				})
 				break;
 			default:
 				//Statements executed when none of the values match the value of the expression
@@ -244,6 +269,28 @@ var swipe = {
 			// videoChange.start(swipe.page(i))
 		}
 	}
+}
+
+//震动方法
+function shake(){
+	var thisPage = swipe.page(swipe.scrollCurrent)
+	if(!thisPage.hasClass('shake_section')){
+		return false
+	}
+
+	swipe.beAble()
+
+	var oShake = $('#shake_section'),
+		count = oShake.find('img.video_img').length,
+		random = Math.ceil(Math.random()*count)-1,
+		randImg = $('#huancaiImg'+random)
+
+	if(!randImg.hasClass('hidden')){
+		shake()
+		return false
+	}
+	thisPage.find('img.video_img').addClass('hidden')
+	randImg.removeClass('hidden')
 }
 
 //手机震动
@@ -265,6 +312,7 @@ window.onload = function() {
 
         //put your own code here etc.
         console.log('Shake!');
+        shake()
     }
 };
 

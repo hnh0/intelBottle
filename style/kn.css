@@ -89,3 +89,13 @@ section.black{
   width: 100%;
   height: 100%;
 }
+.microphone{
+  width: 30px;
+  display: block;
+  margin: -6px auto -6px;
+}
+.shake{
+  width: 60px;
+  display: block;
+  margin: -20px auto -10px;
+}

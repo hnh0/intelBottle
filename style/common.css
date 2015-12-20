@@ -88,6 +88,9 @@ a {
 .hidden {
   display: none !important;
 }
+.op0{
+  opacity: 0;
+}
 
 .show {
   display: block;
