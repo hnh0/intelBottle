@@ -39,6 +39,9 @@
 		},
 		showShare: function (pc_info) {
 			pc_info.find('.layer').removeClass('hidden');
+		},
+		hideShare: function () {
+			$('.layer').addClass('hidden')
 		}
 	};
 
@@ -65,14 +68,20 @@
 		var pc_info = $(this).closest('.pc_info');
 		bottle.showOtherBottle(pc_info);
 	});
+
+	var aOther = [4, 6, 10, 2, 8]
 	$('.other_item').on('click', function () {
 		var index = $(this).attr('index');
 		console.log(index);
+		swipe.fSwipe(aOther[index])
 	});
 	$('.share_btn').on('click', function () {
 		var pc_info = $(this).closest('.pc_info');
 		bottle.showShare(pc_info);
 	})
+	$('.layer').click(function(event) {
+		$(this).addClass('hidden')
+	});
 })();
 
 

@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>瓶子</title>
+    <title>英特尔 未来超能瓶 跨界来袭</title>
     <meta name="description" content="">
     <meta name="keywords" content=""> 
     <link rel="stylesheet" href="./style/common.css" media="all">
+    <link rel="stylesheet" href="./style/kn.css" media="all">
     <link rel="stylesheet" href="./style/howe.css" media="all">
-
 </head>
 <body>
     <div class="wrapper">   
         <div class="logo"></div>
         <div class="main">
-            <!-- <section class="page1 swipe index_page">
+            <section class="page1 swipe index_page">
                 <p class="index_title">英特尔<span>®</span> 想怎么行  就这么行</p>
                 <p class="index_title1">未来超能瓶 跨界来袭</p>
 
@@ -23,159 +23,67 @@
 
                 <a class="index_link" href="####">活动声明</a>
                 <div class="down_tip"></div>
-            </section> -->
-            <!-- <section class="page2 swipe bottle_list_page">
-                <div class="bottle_list_circle">
-                    <div class="list_circle ip6 ip6p"></div>
-                    <div class="list_bottle huancai_bottle ip5 ip6 ip6p" id="bottle_0">
-                        <span>幻彩瓶</span>
-                    </div>
-                    <div class="list_bottle wujie_bottle ip5 ip6 ip6p" id="bottle_1">
-                        <span>无界瓶</span>
-                    </div>
-                    <div class="list_bottle ganguan_bottle ip5 ip6 ip6p" id="bottle_2">
-                        <span>感光瓶</span>
-                    </div>
-                    <div class="list_bottle chaobo_bottle ip5 ip6 ip6p" id="bottle_3">
-                        <span>超薄瓶</span>
-                    </div>
-                    <div class="list_bottle xingge_bottle ip5 ip6 ip6p" id="bottle_4">
-                        <span>型格屏</span>
-                    </div>
-                </div>
-                <div class="bottle_entry hidden">
-                    <img class="bottle_entry_img" src="./img/huancai.png" alt="">
-                    <span class="bottle_entry_text">幻彩瓶</span>
-                </div>
+            </section><!-- /.page1 -->
+            <section class="page2 swipe page_list">
+                <div id="black_bg" class="black_bg"></div><!-- /.black_bg -->
+                <ul id="bottles" class="bottles">
+                    <li id="bottle_0" class="unselected" data-text="炫色彩  随心变">幻彩瓶</li>
+                    <li id="bottle_1" class="unselected" data-text="无瓶壁  无边界">无界瓶</li>
+                    <li id="bottle_2" class="unselected" data-text="新感观  新体验">感观瓶</li>
+                    <li id="bottle_3" class="unselected" data-text="超轻薄  超便携">超薄瓶</li>
+                    <li id="bottle_4" class="unselected" data-text="型出众  大不同">型格屏</li>
+                </ul><!-- /.bottles -->
+                
                 <div class="slogan_wrap">
                     <h2 class="slogan">英特尔超能瓶 酷到没朋友</h2>    
                 </div>
                 <div class="down_tip hidden"></div>
-            </section> -->
-            <!-- <section class="page3 swipe ganguan_page page_detail">
-                <div class="bottle_entry">
-                    <img class="bottle_entry_img" src="./img/ganguan.png" alt="">
-                    <span class="bottle_entry_text">感官瓶</span>
-                </div>
+            </section><!-- /.page2 -->
+
+            <!-- 型格瓶 -->
+            <section class="page3 page_xingge swipe bg_detail">
+                <video playsinline webkit-playsinline id="xingge2" src="video/xingge/xingge2.mov"></video>
+                <img class="video_img" src="video/xingge/xingge2.jpg" alt="">
+
+                <video playsinline webkit-playsinline id="xingge1" class="hidden" src="video/xingge/xingge1.mov"></video>
+                <img class="video_img" src="video/xingge/xingge1.jpg" alt="">
+
                 <div class="slogan_wrap">
-                    <h2 class="slogan">新感官  新体验</h2>    
-                </div>
-            </section> -->
-            <!-- <section class="page4 ganguan_page page_detail">
-                <div class="battle_twist_icon"></div>
-                <div class="battle_twist_handle"></div>
-                <div class="bottle_entry">
-                    <img class="bottle_entry_img" src="./img/ganguan.png" alt="">
-                </div>
-                <div class="slogan_wrap">
-                    <h2 class="slogan">
-                        旋转瓶盖
-                    </h2>    
-                </div>
-            </section> -->
-            <section class="page5 ganguan_page computer_detail">
-                <!-- <div class="pc_info" type="ganguan">
-                    <div class="slogan_wrap ganguan_pc_slogan">
-                        <h2 class="slogan">
-                            新英特尔笔记本   当然更超乎想象
-                        </h2>    
-                    </div>
-                    <div class="info_pc_item ganguan_pc pc_pc">
-                        <img src="./img/ganguan_pc.png" alt="">
-                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
-                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
-                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item ganguan_pc pc_share hidden">
-                        <img src="./img/ganguan_pc.png" alt="">
-                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
-                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
-                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item ganguan_pc ganguan_pc_1 hidden">
-                        <img src="./img/ganguan_pc.png" alt="">
-                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
-                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
-                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
-                        <div class="ganguan_1_info info_out">
-                            <div class="info_in">
-                                360度任意角度翻转<br>带来我型我变的闪耀型格
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item ganguan_pc ganguan_pc_2 hidden">
-                        <img src="./img/ganguan_pc_2.png" alt="">
-                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
-                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
-                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                OGS全贴合玻璃触控技术<br>更人性的人机交互触感
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item ganguan_pc ganguan_pc_3 hidden">
-                        <img src="./img/ganguan_pc_3.png" alt="">
-                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
-                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
-                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                英特尔® 实感™技术3D摄像头<br>重新定义新世代的人机交互界面
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="ganguan_pc_info pc_info_detail">
-                        <span>Real Sense 已被应用于</span><br>
-                        <span class="pc_name">联想Thinkpad S5笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a>
-                    </div>
-                    <div class="ganguan_pc_info pc_info_detail pc_info_detail_share hidden">
-                        <span class="pc_name">联想Thinkpad S5笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a><br>
-                        <a class="share_btn">分享</a>
-                    </div>
-                    <div class="pc_bottle ganguan_bottle">
-                        <img src="./img/ganguan_pc_bottle.png" alt="">
-                    </div>
-                    <div class="other_handle">
-                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
-                        <span>快来体验其它超能瓶</span>
-                    </div>
-                    <div class="other_bottle hidden">
-                        <img src="./img/pc_bottom.png" alt="">
-                        <div class="other_handle_text">快来体验其它超能瓶</div>
-                        <div class="other_list">
-                            <div class="other_item ganguan_bottle" index="0">
-                                <img src="./img/ganguan.png" alt="">
-                                <span>感观瓶</span>
-                            </div>
-                            <div class="other_item wujie_bottle" index="1">
-                                <img src="./img/wujie.png" alt="">
-                                <span>无界瓶</span>
-                            </div>
-                            <div class="other_item chaobo_bottle" index="2">
-                                <img src="./img/chaobo.png" alt="">
-                                <span>超薄瓶</span>
-                            </div>
-                            <div class="other_item xingge_bottle" index="3">
-                                <img src="./img/xingge.png" alt="">
-                                <span>型格瓶</span>
-                            </div>
-                            <div class="other_item huancai_bottle" index="4">
-                                <img src="./img/huancai.png" alt="">
-                                <span>幻彩瓶</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="layer hidden">
-                        <div class="share_lbl">点击右上角分享</div>
-                    </div>
-                </div>  --> 
-                <!-- <div class="pc_info" type="xingge">
+                    <img src="./img/turn.png" alt="" class="turn">
+                    <h2 class="slogan">360度立体投影 横置屏幕体验</h2>    
+                </div><!-- /.slogan_wrap -->
+                
+                <div class="down_tip"></div>
+            </section><!-- /.page3 -->
+            <section class="page4 page_xingge bg_detail line_page">
+                <div class="line_video_wrap begin_show">
+                    <div class="slogan_wrap slogan_top begin_show">
+                        <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                    </div><!-- /.slogan_wrap -->
+
+                    <video playsinline webkit-playsinline src="video/xingge/xingge_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <img src="video/xingge/xingge2.jpg" alt="" class="video_img begin_op1">
+                    <img src="video/xingge/xingge_line_bottle.png" alt="" class="img_line_bottle begin_op1">
+
+                    <div class="change_videos begin_op0">
+                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
+                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
+                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                    </div><!-- /change_videos -->
+
+                    <video playsinline webkit-playsinline src="video/xingge/xingge_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <img src="video/xingge/xingge_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
+
+                    <div class="bottom_text begin_show">
+                        <p class="bottom_text_normal begin_show">运用变型翻转技术<br />
+                        型格瓶将实现多面投影功能</p>
+                        
+                        <p class="restructuring hidden begin_hidden">英特尔科技基因<br />
+                        正在为您重组中…</p>
+                    </div><!-- /.bottom_text -->
+                </div><!-- /.line_video_wrap -->
+
+                <div class="pc_info begin_op0" type="xingge">
                     <div class="slogan_wrap xingge_pc_slogan">
                         <h2 class="slogan">
                             新英特尔笔记本   当然更超乎想象
@@ -275,8 +183,497 @@
                     <div class="layer hidden">
                         <div class="share_lbl">点击右上角分享</div>
                     </div>
-                </div>  -->
-                <!-- <div class="pc_info" type="chaobo">
+                </div><!-- /.pc_info -->
+            </section><!-- /.page4 -->
+            <!-- 型格瓶 -->
+
+            <!-- 感观瓶 -->
+            <section class="page5 page_ganguan swipe bg_detail">
+                <video playsinline webkit-playsinline id="ganguan0" class="video_start begin_show" src="video/ganguan/ganguan0.mov"></video>
+                <img id="rotate" class="default_img begin_show" src="video/ganguan/ganguan_start.jpg" alt="">
+
+                <video playsinline webkit-playsinline id="ganguan1" class="video_start hidden begin_hidden" src="video/ganguan/ganguan1.mov"></video>
+                <img id="ganguanImg1" class="video_img hidden begin_hidden" src="video/ganguan/ganguan1.jpg" alt="">
+
+                <div class="slogan_wrap begin_show">
+                    <h2 class="slogan">
+                        <span class="begin_show">旋转瓶盖</span>
+                        <span class="hidden begin_hidden">智能3D扫描</span>
+                        <span class="hidden begin_hidden">3D人形影像已建立</span>
+                    </h2>
+                </div><!-- /.slogan_wrap -->
+                
+                <div class="down_tip hidden begin_hidden"></div>
+            </section><!-- /.page5 -->
+            <section class="page6 page_ganguan bg_detail line_page">
+                <div class="line_video_wrap begin_show begin_op1">
+                    <div class="slogan_wrap slogan_top begin_show">
+                        <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                    </div><!-- /.slogan_wrap -->
+
+                    <video playsinline webkit-playsinline src="video/ganguan/ganguan_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <img src="video/ganguan/ganguan1.jpg" alt="" class="video_img begin_op1">
+                    <img src="video/ganguan/ganguan_line_bottle.png" alt="" class="img_line_bottle begin_op1">
+
+                    <div class="change_videos begin_op0">
+                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
+                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
+                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                    </div><!-- /change_videos -->
+
+                    <video playsinline webkit-playsinline src="video/ganguan/ganguan_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <img src="video/ganguan/ganguan_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
+
+                    <div class="bottom_text begin_show">
+                        <p class="bottom_text_normal begin_show">运用Real Sense技术<br />
+                        感观瓶将实现即时3D扫描功能</p>
+                        
+                        <p class="restructuring hidden begin_hidden">英特尔科技基因<br />
+                        正在为您重组中…</p>
+                    </div><!-- /.bottom_text -->
+                </div><!-- /.line_video_wrap -->
+
+                <div class="pc_info begin_op0" type="ganguan">
+                    <div class="slogan_wrap ganguan_pc_slogan">
+                        <h2 class="slogan">
+                            新英特尔笔记本   当然更超乎想象
+                        </h2>    
+                    </div>
+                    <div class="info_pc_item ganguan_pc pc_pc">
+                        <img src="./img/ganguan_pc.png" alt="">
+                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
+                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
+                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item ganguan_pc pc_share hidden">
+                        <img src="./img/ganguan_pc.png" alt="">
+                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
+                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
+                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item ganguan_pc ganguan_pc_1 hidden">
+                        <img src="./img/ganguan_pc.png" alt="">
+                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
+                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
+                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
+                        <div class="ganguan_1_info info_out">
+                            <div class="info_in">
+                                360度任意角度翻转<br>带来我型我变的闪耀型格
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item ganguan_pc ganguan_pc_2 hidden">
+                        <img src="./img/ganguan_pc_2.png" alt="">
+                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
+                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
+                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                OGS全贴合玻璃触控技术<br>更人性的人机交互触感
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item ganguan_pc ganguan_pc_3 hidden">
+                        <img src="./img/ganguan_pc_3.png" alt="">
+                        <div class="ganguan_point pc_point ganguan_1" index="1"></div>
+                        <div class="ganguan_point pc_point ganguan_2" index="2"></div>
+                        <div class="ganguan_point pc_point ganguan_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                英特尔® 实感™技术3D摄像头<br>重新定义新世代的人机交互界面
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="ganguan_pc_info pc_info_detail">
+                        <span>Real Sense 已被应用于</span><br>
+                        <span class="pc_name">联想Thinkpad S5笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a>
+                    </div>
+                    <div class="ganguan_pc_info pc_info_detail pc_info_detail_share hidden">
+                        <span class="pc_name">联想Thinkpad S5笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a><br>
+                        <a class="share_btn">分享</a>
+                    </div>
+                    <div class="pc_bottle ganguan_bottle">
+                        <img src="./img/ganguan_pc_bottle.png" alt="">
+                    </div>
+                    <div class="other_handle">
+                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
+                        <span>快来体验其它超能瓶</span>
+                    </div>
+                    <div class="other_bottle hidden">
+                        <img src="./img/pc_bottom.png" alt="">
+                        <div class="other_handle_text">快来体验其它超能瓶</div>
+                        <div class="other_list">
+                            <div class="other_item ganguan_bottle" index="0">
+                                <img src="./img/ganguan.png" alt="">
+                                <span>感观瓶</span>
+                            </div>
+                            <div class="other_item wujie_bottle" index="1">
+                                <img src="./img/wujie.png" alt="">
+                                <span>无界瓶</span>
+                            </div>
+                            <div class="other_item chaobo_bottle" index="2">
+                                <img src="./img/chaobo.png" alt="">
+                                <span>超薄瓶</span>
+                            </div>
+                            <div class="other_item xingge_bottle" index="3">
+                                <img src="./img/xingge.png" alt="">
+                                <span>型格瓶</span>
+                            </div>
+                            <div class="other_item huancai_bottle" index="4">
+                                <img src="./img/huancai.png" alt="">
+                                <span>幻彩瓶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer hidden">
+                        <div class="share_lbl">点击右上角分享</div>
+                    </div>
+                </div><!-- /.ganguan -->
+            </section><!-- /.page6 -->
+            <!-- 感观瓶 -->
+
+            <!-- 无界瓶 -->
+            <section class="page7 page_wujie swipe bg_detail">
+                <video playsinline webkit-playsinline id="wujie0" class="video_start begin_show" src="video/wujie/wujie0.mov"></video>
+                <img id="wujieImg0" class="default_img begin_show" src="video/wujie/wujie_start.jpg" alt="">
+                <img id="wujieImg1" class="video_img hidden begin_hidden" src="video/wujie/wujie1.jpg" alt="">
+
+                <!-- <video playsinline webkit-playsinline id="wujie1" class="video_start hidden begin_hidden" src="video/wujie/wujie1.mov"></video>
+                <img id="wujieImg1" class="video_img hidden begin_hidden" src="video/wujie/wujie1.jpg" alt=""> -->
+
+                <div class="slogan_wrap begin_show">
+                    <img src="./img/microphone.png" alt="" id="microphone" class="microphone">
+                    <h2 class="slogan">按住麦克风发声进行加水</h2>
+                </div><!-- /.slogan_wrap -->
+                
+                <div class="down_tip hidden begin_hidden"></div>
+            </section><!-- /.page7 -->
+            <section class="page8 page_wujie bg_detail line_page">
+                <div class="line_video_wrap begin_show begin_op1">
+                    <div class="slogan_wrap slogan_top begin_show">
+                        <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                    </div><!-- /.slogan_wrap -->
+
+                    <video playsinline webkit-playsinline src="video/wujie/wujie_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <img src="video/wujie/wujie1.jpg" alt="" class="video_img begin_op1">
+                    <img src="video/wujie/wujie_line_bottle.png" alt="" class="img_line_bottle begin_op1">
+
+                    <div class="change_videos begin_op0">
+                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
+                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
+                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                    </div><!-- /change_videos -->
+
+                    <video playsinline webkit-playsinline src="video/wujie/wujie_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <img src="video/wujie/wujie_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
+
+                    <div class="bottom_text begin_show">
+                        <p class="bottom_text_normal begin_show">运用Real Sense技术<br />
+                        感观瓶将实现即时3D扫描功能</p>
+                        
+                        <p class="restructuring hidden begin_hidden">英特尔科技基因<br />
+                        正在为您重组中…</p>
+                    </div><!-- /.bottom_text -->
+                </div><!-- /.line_video_wrap -->
+                
+                <div class="pc_info begin_op0" type="wujie">
+                    <div class="slogan_wrap wujie_pc_slogan">
+                        <h2 class="slogan">
+                            新英特尔笔记本   当然更超乎想象
+                        </h2>    
+                    </div>
+                    <div class="info_pc_item wujie_pc pc_pc">
+                        <img src="./img/wujie_pc.png" alt="">
+                        <div class="wujie_point pc_point wujie_1" index="1"></div>
+                        <div class="wujie_point pc_point wujie_2" index="2"></div>
+                        <div class="wujie_point pc_point wujie_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item wujie_pc pc_share hidden">
+                        <img src="./img/wujie_pc.png" alt="">
+                        <div class="wujie_point pc_point wujie_1" index="1"></div>
+                        <div class="wujie_point pc_point wujie_2" index="2"></div>
+                        <div class="wujie_point pc_point wujie_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item wujie_pc wujie_pc_1 hidden">
+                        <img src="./img/wujie_pc.png" alt="">
+                        <div class="wujie_point pc_point wujie_1" index="1"></div>
+                        <div class="wujie_point pc_point wujie_2" index="2"></div>
+                        <div class="wujie_point pc_point wujie_3" index="3"></div>
+                        <div class="wujie_1_info info_out">
+                            <div class="info_in">
+                                微边框创新设计<br>为视野提供更大屏幕空间
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item wujie_pc wujie_pc_2 hidden">
+                        <img src="./img/wujie_pc_2.png" alt="">
+                        <div class="wujie_point pc_point wujie_1" index="1"></div>
+                        <div class="wujie_point pc_point wujie_2" index="2"></div>
+                        <div class="wujie_point pc_point wujie_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                随意轻击、轻扫和捏放<br>触摸屏让你实现与技术的自然交互
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item wujie_pc wujie_pc_3 hidden">
+                        <img src="./img/wujie_pc_3.png" alt="">
+                        <div class="wujie_point pc_point wujie_1" index="1"></div>
+                        <div class="wujie_point pc_point wujie_2" index="2"></div>
+                        <div class="wujie_point pc_point wujie_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                第六代英特尔® 酷睿™处理器<br>可提供出色的速度和可靠性
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="wujie_pc_info pc_info_detail">
+                        <span>微边框设计已被应用于</span><br>
+                        <span class="pc_name">Dell XPS 13笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a>
+                    </div>
+                    <div class="wujie_pc_info pc_info_detail pc_info_detail_share hidden">
+                        <span class="pc_name">Dell XPS 13笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a><br>
+                        <a class="share_btn">分享</a>
+                    </div>
+                    <div class="pc_bottle wujie_bottle">
+                        <img src="./img/wujie_pc_bottle.png" alt="">
+                    </div>
+                    <div class="other_handle">
+                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
+                        <span>快来体验其它超能瓶</span>
+                    </div>
+                    <div class="other_bottle hidden">
+                        <img src="./img/pc_bottom.png" alt="">
+                        <div class="other_handle_text">快来体验其它超能瓶</div>
+                        <div class="other_list">
+                            <div class="other_item ganguan_bottle" index="0">
+                                <img src="./img/ganguan.png" alt="">
+                                <span>感观瓶</span>
+                            </div>
+                            <div class="other_item wujie_bottle" index="1">
+                                <img src="./img/wujie.png" alt="">
+                                <span>无界瓶</span>
+                            </div>
+                            <div class="other_item chaobo_bottle" index="2">
+                                <img src="./img/chaobo.png" alt="">
+                                <span>超薄瓶</span>
+                            </div>
+                            <div class="other_item xingge_bottle" index="3">
+                                <img src="./img/xingge.png" alt="">
+                                <span>型格瓶</span>
+                            </div>
+                            <div class="other_item huancai_bottle" index="4">
+                                <img src="./img/huancai.png" alt="">
+                                <span>幻彩瓶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer hidden">
+                        <div class="share_lbl">点击右上角分享</div>
+                    </div>
+                </div><!-- /.pc_info -->
+            </section><!-- /.page8 -->
+            <!-- 无界瓶 -->
+
+            <!-- 幻彩瓶 -->
+            <section id="shake_section" class="page9 page_huancai swipe bg_detail shake_section">
+                <img id="huancaiImg0" class="video_img begin_show" src="video/huancai/huancai0.jpg" alt="">
+                <img id="huancaiImg1" class="video_img hidden begin_hidden" src="video/huancai/huancai1.jpg" alt="">
+                <img id="huancaiImg2" class="video_img hidden begin_hidden" src="video/huancai/huancai2.jpg" alt="">
+                <img id="huancaiImg3" class="video_img hidden begin_hidden" src="video/huancai/huancai3.jpg" alt="">
+                <img id="huancaiImg4" class="video_img hidden begin_hidden" src="video/huancai/huancai4.jpg" alt="">
+                <img id="huancaiImg5" class="video_img hidden begin_hidden" src="video/huancai/huancai5.jpg" alt="">
+
+                <div class="slogan_wrap begin_show">
+                    <img src="./img/shake.png" alt="" id="shake" class="shake">
+                    <h2 class="slogan">摇动手机</h2>
+                </div><!-- /.slogan_wrap -->
+                
+                <div class="down_tip hidden begin_hidden"></div>
+            </section><!-- /.page9 -->
+            <section class="page10 page_huancai bg_detail line_page">
+                <div class="line_video_wrap begin_show begin_op1">
+                    <div class="slogan_wrap slogan_top begin_show">
+                        <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                    </div><!-- /.slogan_wrap -->
+
+                    <video playsinline webkit-playsinline src="video/huancai/huancai_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <img src="video/huancai/huancai0.jpg" alt="" class="video_img begin_op1">
+                    <img src="video/huancai/huancai_line_bottle.png" alt="" class="img_line_bottle begin_op1">
+
+                    <div class="change_videos begin_op0">
+                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
+                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
+                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                    </div><!-- /change_videos -->
+
+                    <video playsinline webkit-playsinline src="video/huancai/huancai_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <img src="video/huancai/huancai_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
+
+                    <div class="bottom_text begin_show">
+                        <p class="bottom_text_normal begin_show">运用色彩设计<br />
+                        幻彩瓶将实现随心变色功能</p>
+                        
+                        <p class="restructuring hidden begin_hidden">英特尔科技基因<br />
+                        正在为您重组中…</p>
+                    </div><!-- /.bottom_text -->
+                </div><!-- /.line_video_wrap -->
+                
+                <div class="pc_info begin_op0" type="huancai">
+                    <div class="slogan_wrap huancai_pc_slogan">
+                        <h2 class="slogan">
+                            新英特尔笔记本   当然更超乎想象
+                        </h2>    
+                    </div>
+                    <div class="info_pc_item huancai_pc pc_pc">
+                        <img src="./img/huancai_pc.png" alt="">
+                        <div class="huancai_point pc_point huancai_1" index="1"></div>
+                        <div class="huancai_point pc_point huancai_2" index="2"></div>
+                        <div class="huancai_point pc_point huancai_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item huancai_pc pc_share hidden">
+                        <img src="./img/huancai_pc.png" alt="">
+                        <div class="huancai_point pc_point huancai_1" index="1"></div>
+                        <div class="huancai_point pc_point huancai_2" index="2"></div>
+                        <div class="huancai_point pc_point huancai_3" index="3"></div>
+                    </div>
+                    <div class="info_pc_item huancai_pc huancai_pc_1 hidden">
+                        <img src="./img/huancai_pc.png" alt="">
+                        <div class="huancai_point pc_point huancai_1" index="1"></div>
+                        <div class="huancai_point pc_point huancai_2" index="2"></div>
+                        <div class="huancai_point pc_point huancai_3" index="3"></div>
+                        <div class="huancai_1_info info_out">
+                            <div class="info_in">
+                                缤纷色彩设计<br>超时尚感时刻随行
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item huancai_pc huancai_pc_2 hidden">
+                        <img src="./img/huancai_pc_2.png" alt="">
+                        <div class="huancai_point pc_point huancai_1" index="1"></div>
+                        <div class="huancai_point pc_point huancai_2" index="2"></div>
+                        <div class="huancai_point pc_point huancai_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                轻薄机身<br>让你拥有强大便携性
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="info_pc_item huancai_pc huancai_pc_3 hidden">
+                        <img src="./img/huancai_pc_3.png" alt="">
+                        <div class="huancai_point pc_point huancai_1" index="1"></div>
+                        <div class="huancai_point pc_point huancai_2" index="2"></div>
+                        <div class="huancai_point pc_point huancai_3" index="3"></div>
+                        <div class="info_out">
+                            <div class="info_in">
+                                英特尔® Cherry Trail四核处理器<br>强劲性能助力多任务流畅运行
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="huancai_pc_info pc_info_detail">
+                        <span>多彩设计已被应用于</span><br>
+                        <span class="pc_name">ASUS T100HA笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a>
+                    </div>
+                    <div class="huancai_pc_info pc_info_detail pc_info_detail_share hidden">
+                        <span class="pc_name">ASUS T100HA笔记本</span><br>
+                        <a class="buy_btn">即刻购买</a><br>
+                        <a class="share_btn">分享</a>
+                    </div>
+                    <div class="pc_bottle huancai_bottle">
+                        <img src="./img/huancai.png" alt="">
+                    </div>
+                    <div class="other_handle">
+                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
+                        <span>快来体验其它超能瓶</span>
+                    </div>
+                    <div class="other_bottle hidden">
+                        <img src="./img/pc_bottom.png" alt="">
+                        <div class="other_handle_text">快来体验其它超能瓶</div>
+                        <div class="other_list">
+                            <div class="other_item ganguan_bottle" index="0">
+                                <img src="./img/ganguan.png" alt="">
+                                <span>感观瓶</span>
+                            </div>
+                            <div class="other_item wujie_bottle" index="1">
+                                <img src="./img/wujie.png" alt="">
+                                <span>无界瓶</span>
+                            </div>
+                            <div class="other_item chaobo_bottle" index="2">
+                                <img src="./img/chaobo.png" alt="">
+                                <span>超薄瓶</span>
+                            </div>
+                            <div class="other_item xingge_bottle" index="3">
+                                <img src="./img/xingge.png" alt="">
+                                <span>型格瓶</span>
+                            </div>
+                            <div class="other_item huancai_bottle" index="4">
+                                <img src="./img/huancai.png" alt="">
+                                <span>幻彩瓶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer hidden">
+                        <div class="share_lbl">点击右上角分享</div>
+                    </div>
+                </div> <!-- /.pc_info -->
+            </section><!-- /.page10 -->
+            <!-- 幻彩瓶 -->
+
+            <!-- 超薄瓶 -->
+            <section class="page11 page_chaobao swipe bg_detail">
+                <video playsinline webkit-playsinline id="chaobao0" class="video_start begin_show" src="video/chaobao/chaobao0.mov"></video>
+                <!-- <img id="chaobaoImg0" class="default_img begin_show" src="video/chaobao/chaobao0.jpg" alt=""> -->
+                <img id="chaobaoImg1" class="video_img hidden begin_hidden" src="video/chaobao/chaobao1.jpg" alt="">
+
+                <div class="slogan_wrap begin_show">
+                    <h2 class="slogan">向上拖动箭头</h2>
+                </div><!-- /.slogan_wrap -->
+                
+                <div class="down_tip hidden begin_hidden"></div>
+            </section><!-- /.page11 -->
+            <section class="page12 page_chaobao bg_detail line_page">
+                <div class="line_video_wrap begin_show begin_op1">
+                    <div class="slogan_wrap slogan_top begin_show">
+                        <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
+                    </div><!-- /.slogan_wrap -->
+
+                    <video playsinline webkit-playsinline src="video/chaobao/chaobao_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <img src="video/chaobao/chaobao0.jpg" alt="" class="video_img begin_op1">
+                    <img src="video/chaobao/chaobao_line_bottle.png" alt="" class="img_line_bottle begin_op1">
+
+                    <div class="change_videos begin_op0">
+                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
+                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
+                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                    </div><!-- /change_videos -->
+
+                    <video playsinline webkit-playsinline src="video/chaobao/chaobao_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <img src="video/chaobao/chaobao_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
+
+                    <div class="bottom_text begin_show">
+                        <p class="bottom_text_normal begin_show">运用色彩设计<br />
+                        幻彩瓶将实现随心变色功能</p>
+                        
+                        <p class="restructuring hidden begin_hidden">英特尔科技基因<br />
+                        正在为您重组中…</p>
+                    </div><!-- /.bottom_text -->
+                </div><!-- /.line_video_wrap -->
+                
+                <div class="pc_info begin_op0" type="chaobo">
                     <div class="slogan_wrap chaobo_pc_slogan">
                         <h2 class="slogan">
                             新英特尔笔记本   当然更超乎想象
@@ -377,227 +774,25 @@
                     <div class="layer hidden">
                         <div class="share_lbl">点击右上角分享</div>
                     </div>
-                </div>  -->
-                <!-- <div class="pc_info" type="wujie">
-                    <div class="slogan_wrap wujie_pc_slogan">
-                        <h2 class="slogan">
-                            新英特尔笔记本   当然更超乎想象
-                        </h2>    
-                    </div>
-                    <div class="info_pc_item wujie_pc pc_pc">
-                        <img src="./img/wujie_pc.png" alt="">
-                        <div class="wujie_point pc_point wujie_1" index="1"></div>
-                        <div class="wujie_point pc_point wujie_2" index="2"></div>
-                        <div class="wujie_point pc_point wujie_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item wujie_pc pc_share hidden">
-                        <img src="./img/wujie_pc.png" alt="">
-                        <div class="wujie_point pc_point wujie_1" index="1"></div>
-                        <div class="wujie_point pc_point wujie_2" index="2"></div>
-                        <div class="wujie_point pc_point wujie_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item wujie_pc wujie_pc_1 hidden">
-                        <img src="./img/wujie_pc.png" alt="">
-                        <div class="wujie_point pc_point wujie_1" index="1"></div>
-                        <div class="wujie_point pc_point wujie_2" index="2"></div>
-                        <div class="wujie_point pc_point wujie_3" index="3"></div>
-                        <div class="wujie_1_info info_out">
-                            <div class="info_in">
-                                微边框创新设计<br>为视野提供更大屏幕空间
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item wujie_pc wujie_pc_2 hidden">
-                        <img src="./img/wujie_pc_2.png" alt="">
-                        <div class="wujie_point pc_point wujie_1" index="1"></div>
-                        <div class="wujie_point pc_point wujie_2" index="2"></div>
-                        <div class="wujie_point pc_point wujie_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                随意轻击、轻扫和捏放<br>触摸屏让你实现与技术的自然交互
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item wujie_pc wujie_pc_3 hidden">
-                        <img src="./img/wujie_pc_3.png" alt="">
-                        <div class="wujie_point pc_point wujie_1" index="1"></div>
-                        <div class="wujie_point pc_point wujie_2" index="2"></div>
-                        <div class="wujie_point pc_point wujie_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                第六代英特尔® 酷睿™处理器<br>可提供出色的速度和可靠性
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="wujie_pc_info pc_info_detail">
-                        <span>微边框设计已被应用于</span><br>
-                        <span class="pc_name">Dell XPS 13笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a>
-                    </div>
-                    <div class="wujie_pc_info pc_info_detail pc_info_detail_share hidden">
-                        <span class="pc_name">Dell XPS 13笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a><br>
-                        <a class="share_btn">分享</a>
-                    </div>
-                    <div class="pc_bottle wujie_bottle">
-                        <img src="./img/wujie_pc_bottle.png" alt="">
-                    </div>
-                    <div class="other_handle">
-                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
-                        <span>快来体验其它超能瓶</span>
-                    </div>
-                    <div class="other_bottle hidden">
-                        <img src="./img/pc_bottom.png" alt="">
-                        <div class="other_handle_text">快来体验其它超能瓶</div>
-                        <div class="other_list">
-                            <div class="other_item ganguan_bottle" index="0">
-                                <img src="./img/ganguan.png" alt="">
-                                <span>感观瓶</span>
-                            </div>
-                            <div class="other_item wujie_bottle" index="1">
-                                <img src="./img/wujie.png" alt="">
-                                <span>无界瓶</span>
-                            </div>
-                            <div class="other_item chaobo_bottle" index="2">
-                                <img src="./img/chaobo.png" alt="">
-                                <span>超薄瓶</span>
-                            </div>
-                            <div class="other_item xingge_bottle" index="3">
-                                <img src="./img/xingge.png" alt="">
-                                <span>型格瓶</span>
-                            </div>
-                            <div class="other_item huancai_bottle" index="4">
-                                <img src="./img/huancai.png" alt="">
-                                <span>幻彩瓶</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="layer hidden">
-                        <div class="share_lbl">点击右上角分享</div>
-                    </div>
-                </div>  -->
-                <div class="pc_info" type="huancai">
-                    <div class="slogan_wrap huancai_pc_slogan">
-                        <h2 class="slogan">
-                            新英特尔笔记本   当然更超乎想象
-                        </h2>    
-                    </div>
-                    <div class="info_pc_item huancai_pc pc_pc">
-                        <img src="./img/huancai_pc.png" alt="">
-                        <div class="huancai_point pc_point huancai_1" index="1"></div>
-                        <div class="huancai_point pc_point huancai_2" index="2"></div>
-                        <div class="huancai_point pc_point huancai_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item huancai_pc pc_share hidden">
-                        <img src="./img/huancai_pc.png" alt="">
-                        <div class="huancai_point pc_point huancai_1" index="1"></div>
-                        <div class="huancai_point pc_point huancai_2" index="2"></div>
-                        <div class="huancai_point pc_point huancai_3" index="3"></div>
-                    </div>
-                    <div class="info_pc_item huancai_pc huancai_pc_1 hidden">
-                        <img src="./img/huancai_pc.png" alt="">
-                        <div class="huancai_point pc_point huancai_1" index="1"></div>
-                        <div class="huancai_point pc_point huancai_2" index="2"></div>
-                        <div class="huancai_point pc_point huancai_3" index="3"></div>
-                        <div class="huancai_1_info info_out">
-                            <div class="info_in">
-                                缤纷色彩设计<br>超时尚感时刻随行
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item huancai_pc huancai_pc_2 hidden">
-                        <img src="./img/huancai_pc_2.png" alt="">
-                        <div class="huancai_point pc_point huancai_1" index="1"></div>
-                        <div class="huancai_point pc_point huancai_2" index="2"></div>
-                        <div class="huancai_point pc_point huancai_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                轻薄机身<br>让你拥有强大便携性
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="info_pc_item huancai_pc huancai_pc_3 hidden">
-                        <img src="./img/huancai_pc_3.png" alt="">
-                        <div class="huancai_point pc_point huancai_1" index="1"></div>
-                        <div class="huancai_point pc_point huancai_2" index="2"></div>
-                        <div class="huancai_point pc_point huancai_3" index="3"></div>
-                        <div class="info_out">
-                            <div class="info_in">
-                                英特尔® Cherry Trail四核处理器<br>强劲性能助力多任务流畅运行
-                            </div>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="huancai_pc_info pc_info_detail">
-                        <span>多彩设计已被应用于</span><br>
-                        <span class="pc_name">ASUS T100HA笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a>
-                    </div>
-                    <div class="huancai_pc_info pc_info_detail pc_info_detail_share hidden">
-                        <span class="pc_name">ASUS T100HA笔记本</span><br>
-                        <a class="buy_btn">即刻购买</a><br>
-                        <a class="share_btn">分享</a>
-                    </div>
-                    <div class="pc_bottle huancai_bottle">
-                        <img src="./img/huancai.png" alt="">
-                    </div>
-                    <div class="other_handle">
-                        <img class="other_handle_btn" src="./img/pc_bottom_handle.png" alt="">
-                        <span>快来体验其它超能瓶</span>
-                    </div>
-                    <div class="other_bottle hidden">
-                        <img src="./img/pc_bottom.png" alt="">
-                        <div class="other_handle_text">快来体验其它超能瓶</div>
-                        <div class="other_list">
-                            <div class="other_item ganguan_bottle" index="0">
-                                <img src="./img/ganguan.png" alt="">
-                                <span>感观瓶</span>
-                            </div>
-                            <div class="other_item wujie_bottle" index="1">
-                                <img src="./img/wujie.png" alt="">
-                                <span>无界瓶</span>
-                            </div>
-                            <div class="other_item chaobo_bottle" index="2">
-                                <img src="./img/chaobo.png" alt="">
-                                <span>超薄瓶</span>
-                            </div>
-                            <div class="other_item xingge_bottle" index="3">
-                                <img src="./img/xingge.png" alt="">
-                                <span>型格瓶</span>
-                            </div>
-                            <div class="other_item huancai_bottle" index="4">
-                                <img src="./img/huancai.png" alt="">
-                                <span>幻彩瓶</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="layer hidden">
-                        <div class="share_lbl">点击右上角分享</div>
-                    </div>
-                </div> 
-            </section>
-            <section class="page6">66666c666</section>
-            <section class="page7">77777777</section>
-        </div>
+                </div></div><!-- /.pc_info -->
+            </section><!-- /.page12 -->
+            <!-- 超薄瓶 -->
+      
+        </div><!-- /.main -->
+
         <div class="main_statement hidden">
             <div class="statement_tile">活动声明</div>
             <ul class="statement_list">
                 <li class="statement_item"> <span>></span>英特尔超能瓶为创意方案设想，一切解释权归英特尔所有   </li>
                 <li class="statement_item statement_item_padding"> <span>></span>OEM产品的具体技术特性、特征或性能可能因产品的型号不同或更新有所差异</li>
-                <li class="statement_item"> <span>></span>更多信息，详见<a href="####">www.intel.com</a></li>
+                <li class="statement_item"> <span>></span>更多信息，详见<a target="_blank" href="http://www.intel.com">www.intel.com</a></li>
 
             </ul>
-        </div>
-    </div> <!-- wrapper -->
+        </div><!-- /.main_statement -->
+    </div><!-- wrapper -->
 
 
 <script type="application/javascript" src="./js/zepto.js"></script>
-<!-- <script type="application/javascript" src="./js/zepto.onepagescroll.min.js"></script> -->
 <script type="application/javascript" src="./js/fastclick.js"></script>
 <script type="application/javascript" src="./js/shake.js"></script>
 <script type="application/javascript" src="./js/main.js"></script>

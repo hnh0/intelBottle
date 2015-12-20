@@ -173,7 +173,7 @@ var swipe = {
 		$('.down_tip.hidden').removeClass('hidden')
 	},
 	beforeSwipe: function(i){
-		// console.log('beforeSwipe: ', i)
+		console.log('beforeSwipe: ', i)
 
 		var self = this,
 			thisPage = self.page(i)
@@ -185,7 +185,7 @@ var swipe = {
 			.find('.begin_op0').css('opacity', 0)
 	},
 	callback: function(i){
-		// console.log('callback: ', i)
+		console.log('callback: ', i)
 
 		var self = this,
 			thisPage = self.page(i)
@@ -328,7 +328,7 @@ window.addEventListener('orientationchange', function(event){
 
 		swipe.beAble()
 
-		if(swipe.scrollCurrent == 2){
+		if(swipe.scrollCurrent == 8){
 			video.portrait()
 		}
     }
@@ -338,7 +338,7 @@ window.addEventListener('orientationchange', function(event){
 
 		swipe.able = false
 
-		if(swipe.scrollCurrent == 2){
+		if(swipe.scrollCurrent == 8){
 			video.landscape()
 		}
     }
