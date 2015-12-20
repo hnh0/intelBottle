@@ -31,3 +31,7 @@
   line-height: 20px;
   font-size: 13px;
 }
+.page4 .slogan_top,
+.page4 .bottom_text{
+  opacity: 0;
+}

@@ -59,6 +59,9 @@ var swipe = {
 	scrolling: false,
 	scrollCurrent: 0,
 	scrollTarget: 1,
+	page: function(i){
+		return $(this.scrollWrap).find('section.page'+(i+1));
+	},
 	fSwipe: function(i){
 		if(!this.able){
 			return false
@@ -71,7 +74,8 @@ var swipe = {
 
 		self.scrolling = !self.scrolling
 
-		oSons.eq(0).after(oThis.find('section.page'+(self.scrollTarget+1)));
+		// oSons.eq(0).after(oThis.find('section.page'+(self.scrollTarget+1)));
+		oSons.eq(0).after(self.page(self.scrollTarget));
 		oThis
 			.animate({
 				marginTop: -self.iHeight
@@ -93,11 +97,25 @@ var swipe = {
 		$('.down_tip.hidden').removeClass('hidden')
 	},
 	callback: function(i){
-		// console.log(i)
+		console.log(i)
 		var self = this
 
-		if(i == 1){
-			self.able = false
+		switch (i) {
+			case 1:
+				self.able = false
+				break;
+			case 2:
+				//Statements executed when the result of expression matches value2
+				break;
+			case 3:
+				self.page(3).find('.slogan_top, .bottom_text').animate({
+					opacity: 1
+					}, 500, function() {});
+				//Statements executed when the result of expression matches valueN
+				break;
+			default:
+				//Statements executed when none of the values match the value of the expression
+				break;
 		}
 	}
 }
