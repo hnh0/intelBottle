@@ -241,7 +241,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .ganguan_pc .ganguan_1, .ganguan_pc_1 .ganguan_1{
 	top: -3px;
@@ -501,7 +500,7 @@
 	border:1px #546472 solid;
 	color: #fff;
 	background: #000a12 url(../img/intel_angle_up.png) no-repeat;
-	background-position: 106px center;
+	background-position: 94px center;
     -webkit-background-size: 11px 7px;
 	top: 20px;
 	right: 20px;
@@ -531,7 +530,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .xingge_pc .xingge_1, .xingge_pc_1 .xingge_1{
 	top: 80px;
@@ -631,7 +629,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .chaobo_pc .chaobo_1, .chaobo_pc_1 .chaobo_1{
 	top: 113px;
@@ -732,7 +729,6 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	background: rgba(255, 255, 255, 0.3);
 }
 .wujie_pc .wujie_1, .wujie_pc_1 .wujie_1{
 	top: -5px;
@@ -752,61 +748,169 @@
 	margin-left: -126px;
 	top: 26%;
 }
+.wujie_pc_2 .line{
+	left: 25%;
+}
 .wujie_pc_2 img{
 	height: 129px;
 }
 .wujie_pc_2 .wujie_1{
-	top: -4px;
-	right: 36px;
+	top: 39px;
+	right: 102px;
 }
 .wujie_pc_2 .wujie_2{
-	top: -4px;
-	left: 162px;
+	top: 8px;
+	left: 41px;
 }
 .wujie_pc_2 .wujie_3{
-	top: -4px;
-	left: 5px;
+	top: 100px;
+	left: 172px;
 }
 .wujie_pc_3{
-	width: 217px;
-	height: 130px;
-	margin-left: -109px;
+	width: 222px;
+	height: 142px;
+	margin-left: -111px;
 }
 .wujie_pc_3 img{
-	height: 130px;
+	height: 142px;
 }
 .wujie_pc_3 .wujie_1{
-	top: 89px;
-	left: 144px;
+	top: -5px;
+	left: 122px;
 }
 .wujie_pc_3 .wujie_2{
-	top: 32px;
-	right: 170px;
+	top: 63px;
+	right: 109px;
 }
 .wujie_pc_3 .wujie_3{
-	top: 18px;
-	left: 98px;
+	top: 109px;
+	left: 30px;
 }
 .wujie_pc_1 .info_out{
 	top: -68px;
 	right: -15px;
 }
 .wujie_pc_2 .info_out{
-	top: -92px;
-	right: 24px;
+	top: -60px;
+	left: -1px;
 }
 .wujie_pc_3 .info_out{
-	top: -50px;
-	right: 38px;
+	top: -62px;
+	left: -45px;
 }
 .wujie_pc_1 .line{
 	height: 22px;
 }
 .wujie_pc_2 .line{
-	height: 33px;
+	height: 24px;
 }
 .wujie_pc_3 .line{
-	height: 28px;
+	height: 130px;
+}
+
+.huancai_pc_slogan{
+	top: 12%;
+}
+.huancai_pc{
+	position: absolute;
+	width: 241px;
+	height: 151px;
+	top: 23%;
+	left: 50%;
+	margin-left: -121px;
+	/*background: url(../img/huancai_pc.png) no-repeat center center;
+	background-size:187px  155px;*/
+	text-align: center;
+}
+
+.huancai_pc.pc_share{
+	top: 16%;
+}
+.huancai_pc img{
+	height: 151px;
+}
+.huancai_pc .huancai_point{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.huancai_pc .huancai_1, .huancai_pc_1 .huancai_1{
+	top: 24px;
+	right: 55px;
+}
+.huancai_pc .huancai_2, .huancai_pc_1 .huancai_2{
+	top: 25px;
+	right: 226px;
+}
+.huancai_pc .huancai_3, .huancai_pc_1 .huancai_3{
+	top: 117px;
+	left: 141px;
+}
+.huancai_pc_2{
+	width: 101px;
+	height: 210px;
+	margin-left: -52px;
+	top: 13%;
+}
+.huancai_pc_2 .line{
+	left: 25%;
+}
+.huancai_pc_2 img{
+	height: 210px;
+}
+.huancai_pc_2 .huancai_1{
+	top: 84px;
+	right: 88px;
+}
+.huancai_pc_2 .huancai_2{
+	top: 120px;
+	left: 77px;
+}
+.huancai_pc_2 .huancai_3{
+	top: 165px;
+	left: 37px;
+}
+.huancai_pc_3{
+	width: 160px;
+	height: 178px;
+	margin-left: -80px;
+	top: 19%;
+}
+.huancai_pc_3 img{
+	height: 178px;
+}
+.huancai_pc_3 .huancai_1{
+	top: 148px;
+	left: 138px;
+}
+.huancai_pc_3 .huancai_2{
+	top: 144px;
+	right: 133px;
+}
+.huancai_pc_3 .huancai_3{
+	top: 15px;
+	left: 122px;
+}
+.huancai_pc_1 .info_out{
+	top: -68px;
+	right: 7px;
+}
+.huancai_pc_2 .info_out{
+	top: -29px;
+	right: -83px;
+}
+.huancai_pc_3 .info_out{
+	top: -62px;
+	right: -73px;
+}
+.huancai_pc_1 .line{
+	height: 52px;
+}
+.huancai_pc_2 .line{
+	height: 110px;
+}
+.huancai_pc_3 .line{
+	height: 39px;
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
