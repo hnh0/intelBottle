@@ -55,7 +55,7 @@
 	$('.main_statement').on('click', function () {
 		$('.main_statement').addClass('hidden');
 	});
-	$('.ganguan_point').on('click', function () {
+	$('.pc_point').on('click', function () {
 		var index = $(this).attr('index'),
 			type = $(this).closest('.pc_info').attr('type');
 		bottle.hidePc(type);
