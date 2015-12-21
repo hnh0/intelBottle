@@ -373,7 +373,7 @@ oBottles.find('li').click(function(event) {
 			paddingTop: iWinWidth,
 			backgroundSize: '93.75% 93.75%',
 			// margin: '0 0 0 -150px',
-			margin: '0 0 0 -'+iMarginLeft+'px',
+			margin: '-10% 0 0 -'+iMarginLeft+'px',
 			// left: '50%',
 			fontSize: '16px',
 			textShadow: '0px 0px 8px #2cbbd8, 0px 0px 8px #2cbbd8'
