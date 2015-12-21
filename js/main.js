@@ -358,16 +358,23 @@ oBottles.find('li').click(function(event) {
 		.css('background', 'none')
 		.next('.slogan_wrap').find('.slogan').html(oThis.data('text'))
 
+	var oWin = $(window),
+		iWinWidth = oWin.width(),
+		iParentWidth = oThis.parent().width(),
+		iMarginLeft = (iWinWidth-iParentWidth)/2
 	oThis
 		.removeClass('unselected')
 		.css('z-index', 3)
 		.animate({
-			width: 300,
-			height: 20,
-			paddingTop: 300,
-			backgroundSize: '300px 300px',
-			margin: '0 0 0 -150px',
-			left: '50%',
+			// width: 300,
+			// height: 20,
+			// paddingTop: 300,
+			width: iWinWidth,
+			paddingTop: iWinWidth,
+			backgroundSize: '93.75% 93.75%',
+			// margin: '0 0 0 -150px',
+			margin: '0 0 0 -'+iMarginLeft+'px',
+			// left: '50%',
 			fontSize: '16px',
 			textShadow: '0px 0px 8px #2cbbd8, 0px 0px 8px #2cbbd8'
 		}, time, function() {
