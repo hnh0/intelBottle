@@ -356,33 +356,33 @@ video{
   z-index: 1;
 }
 .bottles li{
-  width: 120px;
+  width: 140px;
   height: 20px;
-  padding-top: 120px;
+  padding-top: 140px;
   text-align: center;
   color: #fff;
   background: url(../img/bottle/bottle_huancai.png) no-repeat center 0;
-  background-size: 120px 120px;
+  background-size: 140px 140px;
   position: absolute;
   left: 0;
   top: 0;
-  margin: -40px 0 0 35px;
+  margin: -40px 0 0 20px;
   z-index: 1;
 }
 #bottle_1{
-  margin: -40px 0 0 170px;
+  margin: -40px 0 0 163px;
   background-image: url(../img/bottle/bottle_wujie.png);
 }
 #bottle_2{
-  margin: 100px 0 0 -15px;
+  margin: 100px 0 0 -30px;
   background-image: url(../img/bottle/bottle_ganguan.png);
 }
 #bottle_3{
-  margin: 100px 0 0 220px;
+  margin: 100px 0 0 210px;
   background-image: url(../img/bottle/bottle_chaobo.png); 
 }
 #bottle_4{
-  margin: 210px 0 0 100px;
+  margin: 180px 0 0 93px;
   background-image: url(../img/bottle/bottle_xingge.png);
 }
 
@@ -419,6 +419,11 @@ video{
   left: 50%;
   margin-left: -10%;
   bottom: 20%;
+}
+@media screen and (min-height: 568px){
+  #bottle_4{
+    margin-top: 210px;
+  }
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
   .bottles{
