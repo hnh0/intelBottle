@@ -29,22 +29,20 @@
 			this.end(obj, callback)
 		},
 		landscape: function (){
-			$('#xingge2')
-				.addClass('hidden')
+			$('#xingge2').css('opacity', 0)
 			$('.video_img').eq(0).addClass('hidden')
 
-			$('#xingge1').removeClass('hidden')
+			$('#xingge1').css('opacity', 1)
 			$('.video_img').eq(1).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(1))
+			video.play($(swipe.scrollWrap).find('.page_landscape').find('video').eq(1))
 		},
 		portrait: function (){
-			$('#xingge1')
-				.addClass('hidden')
+			$('#xingge1').css('opacity', 0)
 			$('.video_img').eq(1).addClass('hidden')
 
-			$('#xingge2').removeClass('hidden')
+			$('#xingge2').css('opacity', 1)
 			$('.video_img').eq(0).removeClass('hidden')
-			video.play($(swipe.scrollWrap).find('.page3').find('video').eq(0))
+			video.play($(swipe.scrollWrap).find('.page_landscape').find('video').eq(0))
 		}
 	}
 })();
@@ -90,8 +88,8 @@ var videoChange = {
 				page.removeClass('black')				
 
 				video_line_computer.removeClass('hidden')
-				img_line_computer.removeClass('hidden')
 				video.play(video_line_computer, function(){
+					img_line_computer.removeClass('hidden')
 					page
 						.find('.bottom_text').addClass('hidden').end()
 						.find('.pc_info').animate({
@@ -302,7 +300,7 @@ window.onload = function() {
 
     //create a new instance of shake.js.
     var myShakeEvent = new Shake({
-        threshold: 15
+        threshold: 10 //default 15
     });
 
     // start listening to device motion
@@ -322,13 +320,15 @@ window.onload = function() {
 
 //判断横竖屏
 window.addEventListener('orientationchange', function(event){
+	var thisPage = swipe.page(swipe.scrollCurrent),
+		canOri = thisPage.hasClass('page_landscape')
     if ( window.orientation == 180 || window.orientation==0 ) {
     	//竖屏
         console.log("竖屏");
 
 		swipe.beAble()
 
-		if(swipe.scrollCurrent == 8){
+		if(canOri){
 			video.portrait()
 		}
     }
@@ -338,7 +338,7 @@ window.addEventListener('orientationchange', function(event){
 
 		swipe.able = false
 
-		if(swipe.scrollCurrent == 8){
+		if(canOri){
 			video.landscape()
 		}
     }

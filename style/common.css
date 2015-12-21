@@ -119,6 +119,18 @@ video{
   position: absolute;
   top: 0;
 }
+#xingge2_img{
+  z-index: 1;
+}
+#xingge2{
+  z-index: 2;
+}
+#xingge1{
+  opacity: 0;
+}
+.page_xingge video{
+  position: absolute;
+}
 /*.bg_1{
   background: url(../img/bg_1.jpg) no-repeat center 0;
   background-size: 100% auto;
@@ -394,4 +406,32 @@ video{
   position: absolute;
   top: 0;
   opacity: 0;
+}
+
+.statement_back{
+  width: 25%;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border: 1px solid #58769c;
+  position: absolute;
+  left: 50%;
+  margin-left: -10%;
+  bottom: 20%;
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+  .bottles{
+    margin-top: 30%;
+  }
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
+  .bottles{
+    margin-top: 35%;
+  }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
+  .bottles{
+    margin-top: 40%;
+  }
 }

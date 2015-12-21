@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/common.css" media="all">
     <link rel="stylesheet" href="./style/kn.css" media="all">
     <link rel="stylesheet" href="./style/howe.css" media="all">
+    <script type="application/javascript" src="./js/zepto.js"></script>
 </head>
 <body>
     <div class="wrapper">   
@@ -21,7 +22,7 @@
 
                 <p class="index_title2">是时候，打开你的脑洞<br>见识它们到底有多超能</p>
 
-                <a class="index_link" href="####">活动声明</a>
+                <a class="index_link" href="javascript:void(0);">活动声明</a>
                 <div class="down_tip"></div>
             </section><!-- /.page1 -->
             <section class="page2 swipe page_list">
@@ -41,11 +42,11 @@
             </section><!-- /.page2 -->
 
             <!-- 型格瓶 -->
-            <section class="page3 page_xingge swipe bg_detail">
-                <video playsinline webkit-playsinline id="xingge2" src="video/xingge/xingge2.mov"></video>
-                <img class="video_img" src="video/xingge/xingge2.jpg" alt="">
+            <section class="page3 page_xingge page_landscape swipe bg_detail">
+                <video id="xingge2" class="begin_op1" src="video/xingge/xingge2.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                <img id="xingge2_img" class="video_img" src="video/xingge/xingge2.jpg" alt="">
 
-                <video playsinline webkit-playsinline id="xingge1" class="hidden" src="video/xingge/xingge1.mov"></video>
+                <video id="xingge1" class="begin_op0" src="video/xingge/xingge1.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <img class="video_img" src="video/xingge/xingge1.jpg" alt="">
 
                 <div class="slogan_wrap">
@@ -61,17 +62,17 @@
                         <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
                     </div><!-- /.slogan_wrap -->
 
-                    <video playsinline webkit-playsinline src="video/xingge/xingge_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <video src="video/xingge/xingge_line_bottle.mov" id="" class="video_line_bottle begin_show" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/xingge/xingge2.jpg" alt="" class="video_img begin_op1">
                     <img src="video/xingge/xingge_line_bottle.png" alt="" class="img_line_bottle begin_op1">
 
                     <div class="change_videos begin_op0">
-                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
-                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
-                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                        <video class="ball_show begin_op1 begin_show" src="video/ball_show.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <video class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <!-- <video class="space" loop="loop" src="video/space.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video> -->
                     </div><!-- /change_videos -->
 
-                    <video playsinline webkit-playsinline src="video/xingge/xingge_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <video src="video/xingge/xingge_line_computer.mov" class="video_line_computer hidden begin_hidden" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/xingge/xingge_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
 
                     <div class="bottom_text begin_show">
@@ -189,10 +190,10 @@
 
             <!-- 感观瓶 -->
             <section class="page5 page_ganguan swipe bg_detail">
-                <video playsinline webkit-playsinline id="ganguan0" class="video_start begin_show" src="video/ganguan/ganguan0.mov"></video>
+                <video id="ganguan0" class="video_start begin_show" src="video/ganguan/ganguan0.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <img id="rotate" class="default_img begin_show" src="video/ganguan/ganguan_start.jpg" alt="">
 
-                <video playsinline webkit-playsinline id="ganguan1" class="video_start hidden begin_hidden" src="video/ganguan/ganguan1.mov"></video>
+                <video id="ganguan1" class="video_start hidden begin_hidden" src="video/ganguan/ganguan1.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <img id="ganguanImg1" class="video_img hidden begin_hidden" src="video/ganguan/ganguan1.jpg" alt="">
 
                 <div class="slogan_wrap begin_show">
@@ -211,17 +212,17 @@
                         <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
                     </div><!-- /.slogan_wrap -->
 
-                    <video playsinline webkit-playsinline src="video/ganguan/ganguan_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <video src="video/ganguan/ganguan_line_bottle.mov" id="" class="video_line_bottle begin_show" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/ganguan/ganguan1.jpg" alt="" class="video_img begin_op1">
                     <img src="video/ganguan/ganguan_line_bottle.png" alt="" class="img_line_bottle begin_op1">
 
                     <div class="change_videos begin_op0">
-                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
-                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
-                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                        <video class="ball_show begin_op1 begin_show" src="video/ball_show.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <video class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <!-- <video class="space" loop="loop" src="video/space.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video> -->
                     </div><!-- /change_videos -->
 
-                    <video playsinline webkit-playsinline src="video/ganguan/ganguan_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <video src="video/ganguan/ganguan_line_computer.mov" class="video_line_computer hidden begin_hidden" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/ganguan/ganguan_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
 
                     <div class="bottom_text begin_show">
@@ -339,11 +340,11 @@
 
             <!-- 无界瓶 -->
             <section class="page7 page_wujie swipe bg_detail">
-                <video playsinline webkit-playsinline id="wujie0" class="video_start begin_show" src="video/wujie/wujie0.mov"></video>
+                <video id="wujie0" class="video_start begin_show" src="video/wujie/wujie0.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <img id="wujieImg0" class="default_img begin_show" src="video/wujie/wujie_start.jpg" alt="">
                 <img id="wujieImg1" class="video_img hidden begin_hidden" src="video/wujie/wujie1.jpg" alt="">
 
-                <!-- <video playsinline webkit-playsinline id="wujie1" class="video_start hidden begin_hidden" src="video/wujie/wujie1.mov"></video>
+                <!-- <video id="wujie1" class="video_start hidden begin_hidden" src="video/wujie/wujie1.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <img id="wujieImg1" class="video_img hidden begin_hidden" src="video/wujie/wujie1.jpg" alt=""> -->
 
                 <div class="slogan_wrap begin_show">
@@ -359,17 +360,17 @@
                         <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
                     </div><!-- /.slogan_wrap -->
 
-                    <video playsinline webkit-playsinline src="video/wujie/wujie_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <video src="video/wujie/wujie_line_bottle.mov" id="" class="video_line_bottle begin_show" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/wujie/wujie1.jpg" alt="" class="video_img begin_op1">
                     <img src="video/wujie/wujie_line_bottle.png" alt="" class="img_line_bottle begin_op1">
 
                     <div class="change_videos begin_op0">
-                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
-                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
-                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                        <video class="ball_show begin_op1 begin_show" src="video/ball_show.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <video class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <!-- <video class="space" loop="loop" src="video/space.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video> -->
                     </div><!-- /change_videos -->
 
-                    <video playsinline webkit-playsinline src="video/wujie/wujie_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <video src="video/wujie/wujie_line_computer.mov" class="video_line_computer hidden begin_hidden" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/wujie/wujie_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
 
                     <div class="bottom_text begin_show">
@@ -507,17 +508,17 @@
                         <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
                     </div><!-- /.slogan_wrap -->
 
-                    <video playsinline webkit-playsinline src="video/huancai/huancai_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <video src="video/huancai/huancai_line_bottle.mov" id="" class="video_line_bottle begin_show" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/huancai/huancai0.jpg" alt="" class="video_img begin_op1">
                     <img src="video/huancai/huancai_line_bottle.png" alt="" class="img_line_bottle begin_op1">
 
                     <div class="change_videos begin_op0">
-                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
-                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
-                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                        <video class="ball_show begin_op1 begin_show" src="video/ball_show.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <video class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <!-- <video class="space" loop="loop" src="video/space.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video> -->
                     </div><!-- /change_videos -->
 
-                    <video playsinline webkit-playsinline src="video/huancai/huancai_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <video src="video/huancai/huancai_line_computer.mov" class="video_line_computer hidden begin_hidden" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/huancai/huancai_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
 
                     <div class="bottom_text begin_show">
@@ -635,7 +636,7 @@
 
             <!-- 超薄瓶 -->
             <section class="page11 page_chaobao swipe bg_detail">
-                <video playsinline webkit-playsinline id="chaobao0" class="video_start begin_show" src="video/chaobao/chaobao0.mov"></video>
+                <video id="chaobao0" class="video_start begin_show" src="video/chaobao/chaobao0.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                 <!-- <img id="chaobaoImg0" class="default_img begin_show" src="video/chaobao/chaobao0.jpg" alt=""> -->
                 <img id="chaobaoImg1" class="video_img hidden begin_hidden" src="video/chaobao/chaobao1.jpg" alt="">
 
@@ -651,17 +652,17 @@
                         <h2 class="slogan">拥有了英特尔芯 瓶子都如此超能</h2>    
                     </div><!-- /.slogan_wrap -->
 
-                    <video playsinline webkit-playsinline src="video/chaobao/chaobao_line_bottle.mov" id="" class="video_line_bottle begin_show"></video>
+                    <video src="video/chaobao/chaobao_line_bottle.mov" id="" class="video_line_bottle begin_show" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/chaobao/chaobao0.jpg" alt="" class="video_img begin_op1">
                     <img src="video/chaobao/chaobao_line_bottle.png" alt="" class="img_line_bottle begin_op1">
 
                     <div class="change_videos begin_op0">
-                        <video playsinline webkit-playsinline class="ball_show begin_op1 begin_show" src="video/ball_show.mov"></video>
-                        <video playsinline webkit-playsinline class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov"></video>
-                        <!-- <video playsinline webkit-playsinline class="space" loop="loop" src="video/space.mov"></video> -->
+                        <video class="ball_show begin_op1 begin_show" src="video/ball_show.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <video class="ball_hide begin_op0 begin_show" src="video/ball_hide.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
+                        <!-- <video class="space" loop="loop" src="video/space.mov" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video> -->
                     </div><!-- /change_videos -->
 
-                    <video playsinline webkit-playsinline src="video/chaobao/chaobao_line_computer.mov" class="video_line_computer hidden begin_hidden"></video>
+                    <video src="video/chaobao/chaobao_line_computer.mov" class="video_line_computer hidden begin_hidden" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
                     <img src="video/chaobao/chaobao_line_computer.png" alt="" class="img_line_computer hidden begin_hidden">
 
                     <div class="bottom_text begin_show">
@@ -786,13 +787,11 @@
                 <li class="statement_item"> <span>></span>英特尔超能瓶为创意方案设想，一切解释权归英特尔所有   </li>
                 <li class="statement_item statement_item_padding"> <span>></span>OEM产品的具体技术特性、特征或性能可能因产品的型号不同或更新有所差异</li>
                 <li class="statement_item"> <span>></span>更多信息，详见<a target="_blank" href="http://www.intel.com">www.intel.com</a></li>
-
             </ul>
+            <a class="statement_back" href="javascript:void($('.main_statement').addClass('hidden'));">返回</a>
         </div><!-- /.main_statement -->
     </div><!-- wrapper -->
 
-
-<script type="application/javascript" src="./js/zepto.js"></script>
 <script type="application/javascript" src="./js/fastclick.js"></script>
 <script type="application/javascript" src="./js/shake.js"></script>
 <script type="application/javascript" src="./js/main.js"></script>

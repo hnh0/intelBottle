@@ -349,7 +349,7 @@
 .pc_info_detail span{
 	display: inline-block;
 	line-height: 18px;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	color: #fffefe;
 }
 .pc_info_detail span.pc_name{
@@ -357,27 +357,27 @@
 }
 .pc_info_detail .buy_btn{
 	display: inline-block;
-	height: 18px;
-	line-height: 18px;
+	height: 26px;
+	line-height: 26px;
 	padding:0 14px;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	background: #00b0f1;
 	color: #fff;
-	width: 50px;
+	width: 60px;
 	text-align: center;
 	margin-top: 8px;
 	border-radius: 1px;
 }
 .pc_info_detail .share_btn{
 	display: inline-block;
-	height: 18px;
-	line-height: 18px;
+	height: 26px;
+	line-height: 26px;
 	padding:0 14px;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	color: #fff;
 	border:1px #5c96c5 solid;
 	margin-top: 8px;
-	width: 50px;
+	width: 60px;
 	text-align: center;
 }
 .pc_bottle{
@@ -612,7 +612,7 @@
 	height: 154px;
 	top: 24%;
 	left: 50%;
-	margin-left: -121px;
+	margin: -10px 0 0 -100px;
 	/*background: url(../img/chaobo_pc.png) no-repeat center center;
 	background-size:187px  155px;*/
 	text-align: center;
