@@ -47,6 +47,17 @@
 			pc_info.find('.pc_share').addClass('hidden');
 			pc_info.find('.pc_info_detail_share').addClass('hidden');
 		},
+		resetPcBottle: function (pc_info) {
+			pc_info.find('.other_handle').removeClass('hidden');
+			pc_info.find('.other_bottle').addClass('hidden');
+			pc_info.find('.pc_bottle').removeClass('hidden');
+			pc_info.find('.info_pc_item').addClass('hidden');
+			pc_info.find('.pc_info_detail').removeClass('hidden');
+			pc_info.find('.slogan_wrap').removeClass('hidden');
+			pc_info.find('.pc_pc').removeClass('hidden')
+			pc_info.find('.pc_share').addClass('hidden');
+			pc_info.find('.pc_info_detail_share').addClass('hidden');
+		},
 		showShare: function (pc_info) {
 			pc_info.find('.layer').removeClass('hidden');
 		},
@@ -85,7 +96,10 @@
 	$('.other_item').on('click', function () {
 		var index = $(this).attr('index');
 		console.log(index);
-		swipe.fSwipe(aOther[index])
+		swipe.fSwipe(aOther[index]);
+		var pc_info = $(this).closest('.pc_info'),
+			type = pc_info.attr('type');
+		bottle.resetPcBottle(pc_info);
 	});
 	$('.share_btn').on('click', function () {
 		var pc_info = $(this).closest('.pc_info');
