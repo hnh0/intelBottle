@@ -417,7 +417,7 @@ video{
   border: 1px solid #58769c;
   position: absolute;
   left: 50%;
-  margin-left: -10%;
+  margin-left: -12.5%;
   bottom: 20%;
 }
 @media screen and (min-height: 568px){
