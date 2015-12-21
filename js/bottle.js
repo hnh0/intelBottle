@@ -37,6 +37,16 @@
 			pc_info.find('.pc_share').removeClass('hidden');
 			pc_info.find('.pc_info_detail_share').removeClass('hidden');
 		},
+		hiddenOtherBottle: function (pc_info) {
+			pc_info.find('.other_handle').removeClass('hidden');
+			pc_info.find('.other_bottle').addClass('hidden');
+			pc_info.find('.pc_bottle').removeClass('hidden');
+			pc_info.find('.info_pc_item').removeClass('hidden');
+			pc_info.find('.pc_info_detail').removeClass('hidden');
+			pc_info.find('.slogan_wrap').removeClass('hidden');
+			pc_info.find('.pc_share').addClass('hidden');
+			pc_info.find('.pc_info_detail_share').addClass('hidden');
+		},
 		showShare: function (pc_info) {
 			pc_info.find('.layer').removeClass('hidden');
 		},
@@ -61,6 +71,8 @@
 	$('.pc_point').on('click', function () {
 		var index = $(this).attr('index'),
 			type = $(this).closest('.pc_info').attr('type');
+		var pc_info = $(this).closest('.pc_info');
+		bottle.hiddenOtherBottle(pc_info);
 		bottle.hidePc(type);
 		bottle.showPcIndex(type, index);
 	});
