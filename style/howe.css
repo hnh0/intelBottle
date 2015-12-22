@@ -490,6 +490,18 @@
 	top: 20px;
 	right: 20px;
 }
+.layer .share_close{
+	position: absolute;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 24px;
+    line-height: 24px;
+    border: 1px #fff solid;
+    padding: 0 30px;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 10%;
+}
 .xingge_pc_slogan{
 	top: 12%;
 }
@@ -821,6 +833,38 @@
 }
 .huancai_pc_3 .line{
 	height: 37px;
+}
+.fab{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation-name: flash;
+  	animation-name: flash;
+  	-webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{

@@ -418,7 +418,7 @@ video{
   position: absolute;
   left: 50%;
   margin-left: -12.5%;
-  bottom: 20%;
+  top: 88%;
 }
 @media screen and (min-height: 568px){
   #bottle_4{

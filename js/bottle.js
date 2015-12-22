@@ -101,9 +101,9 @@
 	$('.share_btn').on('click', function () {
 		var pc_info = $(this).closest('.pc_info');
 		bottle.showShare(pc_info);
-	})
-	$('.layer').click(function(event) {
-		$(this).addClass('hidden')
+	});
+	$('.share_close').on('click',function () {
+		$(this).closest('.layer').addClass('hidden')
 	});
 })();
 
