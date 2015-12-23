@@ -842,8 +842,8 @@
   	animation-name: flash;
   	-webkit-animation-iteration-count: infinite;
   	animation-iteration-count: infinite;
-  	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
+  	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
@@ -865,6 +865,59 @@
   25%, 75% {
     opacity: 0;
   }
+}
+.slideup_icon{
+	position: absolute;
+	left: 50%;
+	top: -29px;
+	margin-left: -10px;
+	-webkit-animation: Topto 1.6s ease-out infinite;
+    -moz-animation: Topto 1.6s ease-out infinite;
+    -o-animation: Topto 1.6s ease-out infinite;
+}
+@-webkit-keyframes Topto {
+    0% {
+    	-webkit-transform: translate(0, 0);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: translate(0, -10px);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes Topto {
+    0% {
+    	-webkit-transform: translate(0, 0);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: translate(0, -10px);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0
+    }
+}
+
+@-o-keyframes Topto {
+    0% {
+    	-webkit-transform: translate(0, 0);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: translate(0, -10px);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0
+    }
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
     .ip5.list_bottle.huancai_bottle,.ip5.list_bottle.wujie_bottle{
