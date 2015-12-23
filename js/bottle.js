@@ -1,6 +1,7 @@
 (function(){
 	var bottle = {
 		bottle_img: ['huancai', 'wujie', 'ganguan', 'chaobo', 'xingge'],
+		bottle_other: ['ganguan', 'wujie', 'chaobo', 'xingge', 'huancai'],
 		bottle_txt: ['幻彩瓶', '无界瓶', '感官瓶', '超薄瓶', '型格瓶'],
 		bottle_target: [],
 		showBottle: function (id) {
@@ -74,7 +75,11 @@
 		swipe.beAble();
 	});
 	$('.index_link').on('click', function () {
+		ga('send','event','bottleH5','statement');
 		$('.main_statement').removeClass('hidden');
+	});
+	$('.statement_back').on('click', function () {
+		ga('send','event','bottleH5','back');
 	});
 	$('.pc_point').on('click', function () {
 		var index = $(this).attr('index'),
@@ -87,15 +92,19 @@
 	$('.other_handle').on('touchstart', function () {
 		var pc_info = $(this).closest('.pc_info');
 		bottle.showOtherBottle(pc_info);
+		var type = pc_info.attr('type');
+		ga('send','event','bottleH5',type,'other');
 	});
 
 	var aOther = [4, 6, 10, 2, 8]
 	$('.other_item').on('click', function () {
 		var index = $(this).attr('index');
-		console.log(index);
-		swipe.fSwipe(aOther[index]);
+		var curtype = bottle.bottle_other[Number(index)];
 		var pc_info = $(this).closest('.pc_info'),
 			type = pc_info.attr('type');
+		ga('send','event','bottleH5',type,curtype);
+		console.log(index);
+		swipe.fSwipe(aOther[index]);
 		bottle.resetPcBottle(pc_info);
 	});
 	$('.share_btn').on('click', function () {
@@ -105,6 +114,14 @@
 	$('.share_close').on('click',function () {
 		$(this).closest('.layer').addClass('hidden')
 	});
+	$('.buy_btn').on('click',function () {
+		var type = $(this).closest('.pc_info').attr('type');
+		ga('send','event','bottleH5',type,'buying');
+	});
+	$('.share_btn').on('click', function () {
+		var type = $(this).closest('.pc_info').attr('type');
+		ga('send','event','bottleH5',type,'share');
+	})
 })();
 
 
