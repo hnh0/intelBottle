@@ -197,9 +197,15 @@ var swipe = {
 				break;
 			case 4:
 				self.able = false
+				
+				//统计代码
+				ga('send','event','bottleH5','ganguan','new');
 
 				//感观瓶拧瓶盖事件绑定
 				$('#rotate').swipeRight(function(){
+					//统计代码
+					ga('send','event','bottleH5','ganguan','home');
+
 					var ganguanVedio0 = $('#ganguan0'),
 						ganguanVedio1 = $('#ganguan1'),
 						ganguanImg1 = $('#ganguanImg1')
