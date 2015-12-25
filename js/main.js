@@ -113,6 +113,7 @@ var videoChange = {
 var swipe = {
 	able: true,
 	scrollWrap: '.main',
+	loading: $('#loading'),
 	iHeight: $('body').height(),
 	scrolling: false,
 	scrollCurrent: 0,
@@ -163,7 +164,31 @@ var swipe = {
 
 				self.scrolling = !self.scrolling
 
-				self.callback(self.scrollCurrent)
+				// self.callback(self.scrollCurrent)
+				var thisPage = self.page(self.scrollCurrent),
+					iVideo = thisPage.find('video').length
+
+				thisPage.data('ended') === undefined ? thisPage.data('ended', 0) : void(0)
+
+				if(iVideo > 0 && iVideo != thisPage.data('ended')){
+					thisPage.find('video')
+						.each(function(j, el) {
+							var oVideo = $(this)
+
+							oVideo[0].load()
+							oVideo[0]
+								.addEventListener('loadeddata', function(){
+									thisPage.data('ended', thisPage.data('ended')+1)
+
+									if(iVideo == thisPage.data('ended')){
+										self.loading.addClass('hidden')
+										self.callback(self.scrollCurrent)
+									}
+								})
+						});
+				}else{
+					self.callback(self.scrollCurrent)
+				}
 			});
 	},
 	beAble: function(){
@@ -174,7 +199,16 @@ var swipe = {
 		console.log('beforeSwipe: ', i)
 
 		var self = this,
-			thisPage = self.page(i)
+			thisPage = self.page(i),
+			iVideo = thisPage.find('video').length
+
+		thisPage.data('ended') === undefined ? thisPage.data('ended', 0) : void(0)
+
+		if(iVideo > 0 && iVideo != thisPage.data('ended')){
+			self.loading
+				.removeClass('hidden')
+				.appendTo(thisPage)
+		}
 
 		thisPage
 			.find('.begin_show').removeClass('hidden').end()
@@ -260,7 +294,6 @@ var swipe = {
 			case 10:
 				//超薄瓶
 				self.able = false
-
 				var chaobaoVideo0 = thisPage.find('video:first')
 				video.play(chaobaoVideo0, function(){
 					chaobaoVideo0.next('img').removeClass('hidden')
