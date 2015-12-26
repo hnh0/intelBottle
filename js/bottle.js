@@ -103,9 +103,10 @@
 		var pc_info = $(this).closest('.pc_info'),
 			type = pc_info.attr('type');
 		ga('send','event','bottleH5',type,curtype);
+		bottle.resetPcBottle(pc_info);
 		console.log(index);
 		swipe.fSwipe(aOther[index]);
-		bottle.resetPcBottle(pc_info);
+		
 	});
 	$('.share_btn').on('click', function () {
 		var pc_info = $(this).closest('.pc_info');
