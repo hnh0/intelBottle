@@ -341,6 +341,22 @@ function shake(){
 	randImg.removeClass('hidden')
 }
 
+//音乐播放停止
+function playPause() {
+    var myVideo = document.querySelectorAll('audio')[0];
+    var music_btn = document.getElementById('music_btn');
+    if (myVideo.paused){
+        myVideo.play();
+        $('.music_btn').addClass('border_anim');
+        musicStatus = true;
+    }
+    else{
+        myVideo.pause();
+        $('.music_btn').removeClass('border_anim');
+        musicStatus = false;
+    }
+}
+
 //手机震动
 window.onload = function() {
 
