@@ -93,11 +93,11 @@ var videoChange = {
 					page
 						.find('.bottom_text').addClass('hidden').end()
 						.find('.pc_info').animate({
-						opacity: 1
-					}, 600, function() {})
-					page.find('.line_video_wrap').animate({
-						opacity: 0
-					}, 600, function() {})
+							opacity: 1
+						}, 600, function() {})
+						page.find('.line_video_wrap').animate({
+							opacity: 0
+						}, 600, function() {})
 				})
 			})
 		})
