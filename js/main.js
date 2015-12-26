@@ -436,8 +436,28 @@ $(function() {
 	function stopScrolling( touchEvent ) { 
 		touchEvent.preventDefault(); 
 	} 
-   document.addEventListener( 'touchstart' , stopScrolling , false ); 
-   document.addEventListener( 'touchmove' , stopScrolling , false );
+	document.addEventListener( 'touchstart' , stopScrolling , false ); 
+	document.addEventListener( 'touchmove' , stopScrolling , false );
 
-    swipe.bind()
+	swipe.bind()
+
+	var oLoadBox = $('#for_loading'),
+		oLoadImg = oLoadBox.find('img'),
+		iImg = oLoadImg.length,
+		iImgAlready = 0
+
+	oLoadImg.each(function(i){
+		var oThis = $(this),
+			sSrc = oThis.attr('src')
+		oThis
+			.attr('src', '')
+			.on('load', function(){
+				iImgAlready ++
+				console.log(iImgAlready)
+				if(iImgAlready == iImg){
+					$('#loading').addClass('hidden')
+				}
+			})
+			.attr('src', sSrc)
+	})
 })
