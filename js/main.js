@@ -88,6 +88,8 @@ var videoChange = {
 				page.removeClass('black')				
 
 				video_line_computer.removeClass('hidden')
+				var pc_info = swipe.page(swipe.scrollCurrent).find('.pc_info')
+				bottle.resetPcBottle(pc_info)
 				video.play(video_line_computer, function(){
 					img_line_computer.removeClass('hidden')
 					page
@@ -98,6 +100,7 @@ var videoChange = {
 						page.find('.line_video_wrap').animate({
 							opacity: 0
 						}, 600, function() {})
+
 				})
 			})
 		})
