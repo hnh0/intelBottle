@@ -1,5 +1,5 @@
 (function(){
-	var bottle = {
+	window.bottle = {
 		bottle_img: ['huancai', 'wujie', 'ganguan', 'chaobo', 'xingge'],
 		bottle_other: ['ganguan', 'wujie', 'chaobo', 'xingge', 'huancai'],
 		bottle_txt: ['幻彩瓶', '无界瓶', '感官瓶', '超薄瓶', '型格瓶'],
@@ -103,9 +103,10 @@
 		var pc_info = $(this).closest('.pc_info'),
 			type = pc_info.attr('type');
 		ga('send','event','bottleH5',type,curtype);
+		bottle.resetPcBottle(pc_info);
 		console.log(index);
 		swipe.fSwipe(aOther[index]);
-		bottle.resetPcBottle(pc_info);
+		
 	});
 	$('.share_btn').on('click', function () {
 		var pc_info = $(this).closest('.pc_info');
