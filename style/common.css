@@ -188,11 +188,11 @@ video{
 }
 @-webkit-keyframes ToptoA {
     0% {
-        -webkit-transform: translate(0, -40px);
+        -webkit-transform: translate(0, -20px);
         opacity: 0
     }
     20% {
-        -webkit-transform: translate(0, -20px);
+        -webkit-transform: translate(0, -10px);
         opacity: 1
     }
     100% {
@@ -203,11 +203,11 @@ video{
 
 @-moz-keyframes ToptoA {
     0% {
-        -moz-transform: translate(0, -40px);
+        -moz-transform: translate(0, -20px);
         opacity: 0
     }
     20% {
-        -moz-transform: translate(0, -20px);
+        -moz-transform: translate(0, -10px);
         opacity: 1
     }
     100% {
@@ -218,11 +218,11 @@ video{
 
 @-o-keyframes ToptoA {
     0% {
-        -o-transform: translate(0, -40px);
+        -o-transform: translate(0, -20px);
         opacity: 0
     }
     20% {
-        -o-transform: translate(0, -20px);
+        -o-transform: translate(0, -10px);
         opacity: 1
     }
     100% {
@@ -322,6 +322,7 @@ video{
   margin: 0 14px;
   padding: 0 3px;
   letter-spacing: 2px;
+  font-weight: bold;
   position: relative;
 }
 .slogan::before,
@@ -423,7 +424,7 @@ video{
   opacity: 0;
 }
 
-.statement_back{
+.ganguan_swipe{
   width: 25%;
   line-height: 26px;
   text-align: center;

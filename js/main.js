@@ -236,7 +236,7 @@ var swipe = {
 				ga('send','event','bottleH5','ganguan','new');
 
 				//感观瓶拧瓶盖事件绑定
-				$('#rotate').swipeRight(function(){
+				$('.rotate').swipeRight(function(){
 					//统计代码
 					ga('send','event','bottleH5','ganguan','home');
 
@@ -244,7 +244,9 @@ var swipe = {
 						ganguanVedio1 = $('#ganguan1'),
 						ganguanImg1 = $('#ganguanImg1')
 
-					ganguanVedio0.next('img').addClass('hidden')
+					ganguanVedio0
+						.next('img.rotate').addClass('hidden')
+						.next('img.rotate').addClass('hidden')
 					video.play(ganguanVedio0, function(){
 						//显示底部『智能3D扫描』
 						thisPage.find('.slogan span')
@@ -306,8 +308,10 @@ var swipe = {
 		}
 
 		if(thisPage.hasClass('line_page')){
-			videoChange.start(thisPage)
-			// videoChange.start(swipe.page(i))
+			setTimeout(function(){
+				videoChange.start(thisPage)
+				// videoChange.start(swipe.page(i))
+			}, 1000)
 		}
 	}
 }
@@ -453,7 +457,7 @@ $(function() {
 			.attr('src', '')
 			.on('load', function(){
 				iImgAlready ++
-				console.log(iImgAlready)
+				// console.log(iImgAlready)
 				if(iImgAlready == iImg){
 					$('#loading').addClass('hidden')
 				}
