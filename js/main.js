@@ -296,10 +296,15 @@ var swipe = {
 			case 10:
 				//超薄瓶
 				self.able = false
-				var chaobaoVideo0 = thisPage.find('video:first')
-				video.play(chaobaoVideo0, function(){
-					chaobaoVideo0.next('img').removeClass('hidden')
-					self.beAble()
+				$('#chaobaoImg0').swipeDown(function(){
+					var oThis = $(this),
+						chaobaoVideo0 = thisPage.find('video:first')
+						console.log('add hidden')
+					oThis.addClass('hidden')
+					video.play(chaobaoVideo0, function(){
+						chaobaoVideo0.next('img').next('img').removeClass('hidden')
+						self.beAble()
+					})
 				})
 				break;
 			default:
