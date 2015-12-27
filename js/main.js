@@ -183,6 +183,9 @@ var swipe = {
 								.addEventListener('loadeddata', function(){
 									thisPage.data('ended', thisPage.data('ended')+1)
 
+									var iPercent = parseInt(100*(iVideo/thisPage.data('ended')))
+									self.loading.find('.load_p').html(iPercent)
+
 									if(iVideo == thisPage.data('ended')){
 										self.loading.addClass('hidden')
 										self.callback(self.scrollCurrent)
@@ -469,7 +472,9 @@ $(function() {
 
 	swipe.bind()
 
-	var oLoadBox = $('#for_loading'),
+	var oLayer = $('#loading'),
+		oPercent = oLayer.find('.load_p'),
+		oLoadBox = $('#for_loading'),
 		oLoadImg = oLoadBox.find('img'),
 		iImg = oLoadImg.length,
 		iImgAlready = 0
@@ -482,8 +487,10 @@ $(function() {
 			.on('load', function(){
 				iImgAlready ++
 				// console.log(iImgAlready)
+				var iPercent = parseInt(100*(iImgAlready/iImg))
+				oPercent.html(iPercent)
 				if(iImgAlready == iImg){
-					$('#loading').addClass('hidden')
+					oLayer.addClass('hidden')
 				}
 			})
 			.attr('src', sSrc)
