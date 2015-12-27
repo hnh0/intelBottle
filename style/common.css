@@ -311,13 +311,13 @@ video{
   height: 60px;
   position: absolute;
   text-align: center;
-  bottom: 4%;
+  bottom: 5%;
   z-index: 4;
 }
 .turn{
   width: 25px;
   display: block;
-  margin: -6px auto -6px;
+  margin: -16px auto -6px;
 }
 .slogan{
   min-width: 200px;
