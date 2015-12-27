@@ -183,7 +183,7 @@ var swipe = {
 								.addEventListener('loadeddata', function(){
 									thisPage.data('ended', thisPage.data('ended')+1)
 
-									var iPercent = parseInt(100*(iVideo/thisPage.data('ended')))
+									var iPercent = parseInt(100*(thisPage.data('ended')/iVideo))
 									self.loading.find('.load_p').html(iPercent)
 
 									if(iVideo == thisPage.data('ended')){
