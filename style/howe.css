@@ -2,6 +2,26 @@
 	background: url(../img/index_bg.jpg) no-repeat center 0;
 	background-size: cover;
 }
+.index_page .intel_core{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.index_page .intel_bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-animation-name: flash;
+  	animation-name: flash;
+  	-webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 .index_title{
 	position: absolute;
 	top: 20%;
