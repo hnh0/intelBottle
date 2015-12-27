@@ -835,6 +835,32 @@
 .huancai_pc_3 .line{
 	height: 37px;
 }
+.statement_back{
+	display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 14px;
+    font-size: 1.4rem;
+    color: #fff;
+    border: 1px #5c96c5 solid;
+    margin-top: 8px;
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -45px;
+}
+.bottle_tip{
+	display: none;
+	line-height: 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+    width: 100%;
+    bottom: 14%;
+}
 .fab{
 	position: absolute;
 	top: 0;
@@ -930,6 +956,9 @@
     .ip5.list_bottle.chaobo_bottle{
     	bottom:38%;
     }
+    .bottle_tip{
+    	display: block;
+    }
 }
 
 @media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
@@ -1024,6 +1053,9 @@
 	    top: 9.5%;
 	    right: 9%;
 	}
+	.bottle_tip{
+    	display: block;
+    }
 }
 @media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
     
@@ -1117,5 +1149,8 @@
 	    top: 11%;
 	    right: 10.5%;
 	}
+	.bottle_tip{
+    	display: block;
+    }
 }
 

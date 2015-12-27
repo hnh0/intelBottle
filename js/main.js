@@ -421,7 +421,7 @@ oBottles.find('li').click(function(event) {
 	var oThis = $(this),
 		iIdx = oThis.index(),
 		time = 500
-
+	$('.bottle_tip').addClass('hidden')
 	swipe.scrollTarget = aBottles[iIdx]
 
 	oBottles
