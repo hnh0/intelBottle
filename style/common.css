@@ -564,6 +564,7 @@ video{
   font-size: 14px;
   line-height: 25px;
   background: url(../img/computer_bg.jpg) no-repeat center bottom;
+  background-size: 100% auto;
 }
 .preemptive_box img{
   width: 100%;

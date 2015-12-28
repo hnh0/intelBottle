@@ -416,7 +416,7 @@ window.addEventListener('orientationchange', function(event){
 });
 
 var oBottles = $('#bottles'),
-	aBottles = [8, 6, 4, 10, 2]
+	aBottles = [8, 7, 5, 11, 3]
 
 oBottles.find('li').click(function(event) {
 	var oThis = $(this),

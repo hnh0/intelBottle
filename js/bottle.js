@@ -96,7 +96,7 @@
 		ga('send','event','bottleH5',type,'other');
 	});
 
-	var aOther = [4, 6, 10, 2, 8]
+	var aOther = [5, 7, 11, 3, 8]
 	$('.other_item').on('click', function () {
 		var index = $(this).attr('index');
 		var curtype = bottle.bottle_other[Number(index)];
