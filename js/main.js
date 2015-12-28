@@ -212,6 +212,7 @@ var swipe = {
 
 		if(iVideo > 0 && iVideo != thisPage.data('ended')){
 			self.loading
+				.find('.load_p').html(0).end()
 				.removeClass('hidden')
 				.appendTo(thisPage)
 		}

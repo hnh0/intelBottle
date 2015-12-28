@@ -506,6 +506,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1000;
 	background: rgba(0, 0, 0, 0.67);
 }
 .layer .share_lbl{
