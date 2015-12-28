@@ -111,7 +111,7 @@ a {
   height: 100%;
   position: absolute;
   background: #000 url(../img/loading.gif) no-repeat center center;
-  background-size: 80px 80px;
+  background-size: 20% 20%;
   top: 0;
   z-index: 200;
   color: #fff;
@@ -121,9 +121,10 @@ a {
   width: 100%;
   position: absolute;
   text-align: center;
-  top:50%;
+  top: 60%;
   font-size: 16px;
   padding-top: 30px;
+  color: #04afc3;
 }
 .for_loading{
   position: absolute;
@@ -461,14 +462,17 @@ video{
     }
 }
 .music_btn {
-    background: url("../img/music_btn.png") no-repeat center center;
+    background: url("../img/switch.gif") no-repeat center center;
     background-size: 26px 26px;
     width: 26px;
     height: 26px;
     position: absolute;
     z-index: 999;
     top: 4%;
-    right: 2%;
+    right: 5%;
+}
+.music_btn span{
+  display: none !important;
 }
 .border_anim .music_btn_anim {
     display: block;
@@ -548,4 +552,27 @@ video{
   .bottles{
     margin-top: 40%;
   }
+}
+.preemptive_box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  text-align: center;
+  color: #fffffd;
+  font-size: 14px;
+  line-height: 25px;
+  background: url(../img/computer_bg.jpg) no-repeat center bottom;
+}
+.preemptive_box img{
+  width: 100%;
+  display: block;
+}
+.preemptive_box strong{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.preemptive_box .buy_btn{
+  margin-top: 30px;
 }

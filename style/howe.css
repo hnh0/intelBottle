@@ -104,10 +104,14 @@
 .statement_list .statement_item{
 	padding-left: 10px;
 	position: relative;
+	margin: 10px 0 0;
+}
+.statement_list .statement_item:first-child{
+	margin-top: 0;
 }
 .statement_item_padding{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	/*padding-top: 30px;
+	padding-bottom: 30px;*/
 }
 .statement_list .statement_item span{
 	position: absolute;
@@ -362,6 +366,7 @@
 .pc_info_detail span.pc_name{
 	color: #f6d257;
 }
+.buy_btn,
 .pc_info_detail .buy_btn{
 	display: inline-block;
 	height: 26px;
@@ -375,6 +380,7 @@
 	margin-top: 8px;
 	border-radius: 1px;
 }
+.empty_btn,
 .pc_info_detail .share_btn{
 	display: inline-block;
 	height: 26px;
@@ -386,6 +392,10 @@
 	margin-top: 8px;
 	width: 60px;
 	text-align: center;
+}
+.empty_btn.preemptive{
+	width: auto;
+	margin: 8px 3px 0;
 }
 .pc_bottle{
 	position: absolute;
